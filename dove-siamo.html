@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dove Siamo - Caffè Barone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- INTESTAZIONE / HEADER -->
+  <header class="main-header">
+    <div class="header-content">
+      <a href="index.html" class="back-link">← Torna al Menù</a>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="logo.jpg" alt="Caffè Barone Logo" style="width: 35px; height: 35px; border-radius: 50%; object-fit: cover;">
+        <h1 style="margin: 0;">Dove Siamo</h1>
+      </div>
+      <button id="menu-toggle-btn" class="menu-icon-btn" aria-label="Apri Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENU LATERALE A COMPARSA (DRAWER) -->
+  <div id="side-drawer" class="drawer-overlay">
+    <div class="drawer-content">
+      <button id="close-drawer-btn" class="close-drawer">&times;</button>
+      <div style="text-align: center; margin-bottom: 15px;">
+        <img src="logo.jpg" alt="Caffè Barone" style="width: 65px; height: 65px; border-radius: 50%; display: block; margin: 0 auto 8px; object-fit: cover;">
+        <h2 style="margin: 0;">Navigazione</h2>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html">📋 Catalogo Completo</a>
+        <a href="alcolici.html" class="highlight-link">🍾 Bottiglie del Bar</a>
+        <a href="deliveroo.html" class="deliveroo-drawer-link">🛵 Ordina su Deliveroo</a>
+        <a href="dove-siamo.html" class="active">📍 Dove Siamo</a>
+        <a href="#" id="open-hours-btn">🕒 Orari Bar</a>
+        <hr class="drawer-divider">
+        <a href="https://www.instagram.com/barone.coffee/" target="_blank" rel="noopener noreferrer" class="instagram-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="nav-icon">
+          Instagram
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MODAL / POPUP TABELLA ORARI -->
+  <div id="hours-modal" class="modal-overlay">
+    <div class="modal-content hours-modal-content">
+      <h2>🕒 Orari di Apertura</h2>
+      
+      <table class="hours-table">
+        <thead>
+          <tr>
+            <th>Giorno</th>
+            <th>Orario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunedì</td>
+            <td>07:00 - 23:30</td>
+          </tr>
+          <tr class="closed-row">
+            <td>Martedì</td>
+            <td>Chiuso</td>
+          </tr>
+          <tr>
+            <td>Mercoledì</td>
+            <td>07:00 - 23:30</td>
+          </tr>
+          <tr>
+            <td>Giovedì</td>
+            <td>07:00 - 23:30</td>
+          </tr>
+          <tr>
+            <td>Venerdì</td>
+            <td>07:00 - 23:30</td>
+          </tr>
+          <tr>
+            <td>Sabato</td>
+            <td>07:00 - 23:30</td>
+          </tr>
+          <tr>
+            <td>Domenica</td>
+            <td>07:00 - 23:30</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button id="close-hours-btn" class="btn-primary" style="margin-top: 15px;">Chiudi</button>
+    </div>
+  </div>
+
+  <!-- CONTENUTORE MAPPA -->
+  <main class="container">
+    <div class="location-card">
+      <h2 class="location-title">📍 Ci trovi in:</h2>
+      <p class="location-address">Via Vittorio Emanuele II, 2 - Firenze (FI)</p>
+      
+      <!-- MAPPA INTERATTIVA GOOGLE -->
+      <div class="map-wrapper">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.3702166948577!2d11.2513988!3d43.7859345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a543594191c9d%3A0xb308a3c861218567!2sVia%20Vittorio%20Emanuele%20II%2C%202%2C%2050134%20Firenze%20FI!5e0!3m2!1sit!2sit!4v1710000000000!5m2!1sit!2sit" 
+          width="100%" 
+          height="320" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- PULSANTE APRI MAPPE NATIVE -->
+      <button id="open-maps-btn" class="btn-primary maps-btn">
+        🗺️ Ottieni indicazioni stradali
+      </button>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
