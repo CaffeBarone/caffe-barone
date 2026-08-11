@@ -1,0 +1,145 @@
+[
+  {
+    "id": "caf_1",
+    "nome": "Caffè",
+    "prezzo": "1,30 €",
+    "miniDescrizione": "Espresso classico",
+    "descrizioneCompleta": "Caffè espresso classico preparato con la nostra miscela selezionata.",
+    "immagine": "images/caffe.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true
+  },
+  {
+    "id": "caf_2",
+    "nome": "Caffè Decaffeinato",
+    "prezzo": "1,50 €",
+    "miniDescrizione": "Caffè deka aromatico",
+    "descrizioneCompleta": "Espresso decaffeinato dal gusto pieno e avvolgente.",
+    "immagine": "images/caffe-deca.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true
+  },
+  {
+    "id": "caf_3",
+    "nome": "Caffè Americano",
+    "prezzo": "1,50 €",
+    "miniDescrizione": "Espresso lungo in tazza grande",
+    "descrizioneCompleta": "Caffè espresso allungato con acqua calda in tazza grande.",
+    "immagine": "images/caffe-americano.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true
+  },
+  {
+    "id": "caf_5",
+    "nome": "Caffè Ginseng (Tazza Bassa)",
+    "prezzo": "1,80 €",
+    "miniDescrizione": "Caffè al ginseng in tazza piccola",
+    "descrizioneCompleta": "Bevanda energizzante al ginseng in tazza piccola.",
+    "immagine": "images/caffe-ginseng.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_6",
+    "nome": "Caffè Ginseng (Tazza Alta)",
+    "prezzo": "1,90 €",
+    "miniDescrizione": "Caffè al ginseng in tazza grande",
+    "descrizioneCompleta": "Bevanda energizzante al ginseng servita in tazza grande.",
+    "immagine": "images/caffe-ginseng.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_7",
+    "nome": "Crema Caffè",
+    "prezzo": "3,00 €",
+    "miniDescrizione": "Fresca e vellutata",
+    "descrizioneCompleta": "Deliziosa crema fredda al caffè, soffice e rinfrescante.",
+    "immagine": "images/crema-caffe.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_8",
+    "nome": "Caffè Shakerato",
+    "prezzo": "3,50 €",
+    "miniDescrizione": "Caffè freddo shakerato con ghiaccio",
+    "descrizioneCompleta": "Espresso shakerato con ghiaccio e zucchero per una consistenza schiumosa e fresca.",
+    "immagine": "images/caffe-shakerato.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true
+  },
+  {
+    "id": "caf_9",
+    "nome": "Cappuccino",
+    "prezzo": "1,80 €",
+    "miniDescrizione": "Espresso con schiuma di latte",
+    "descrizioneCompleta": "Espresso con latte montato a vapore e morbida schiuma.",
+    "immagine": "images/cappuccino.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_10",
+    "nome": "Caffelatte",
+    "prezzo": "2,00 €",
+    "miniDescrizione": "Latte caldo con un goccio di caffè",
+    "descrizioneCompleta": "Latte caldo abbondante macchiato con un espresso.",
+    "immagine": "images/caffelatte.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_11",
+    "nome": "Macchiatone",
+    "prezzo": "1,50 €",
+    "miniDescrizione": "Via di mezzo tra macchiato e cappuccino",
+    "descrizioneCompleta": "Espresso servito in tazza media con latte montato.",
+    "immagine": "images/macchiatone.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_12",
+    "nome": "Caffè Corretto",
+    "prezzo": "2,50 €",
+    "miniDescrizione": "Espresso con aggiunta di liquore",
+    "descrizioneCompleta": "Caffè espresso corretto a scelta con grappa, sambuca, oppure altro liquore.",
+    "immagine": "images/caffe-corretto.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true
+  },
+  {
+    "id": "caf_13",
+    "nome": "Latte Macchiato",
+    "prezzo": "1,90 €",
+    "miniDescrizione": "Bicchiere di latte caldo macchiato caffè",
+    "descrizioneCompleta": "Gran bicchiere di latte caldo con schiuma e un espresso d'accompagnamento.",
+    "immagine": "images/latte-macchiato.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false
+  },
+  {
+    "id": "caf_14",
+    "nome": "Thé e Infusi",
+    "prezzo": "3,00 €",
+    "miniDescrizione": "Selezione di thé, tisane e infusi",
+    "descrizioneCompleta": "Ampia selezione di thé caldi, tisane digestive e infusi fruttati.",
+    "immagine": "images/the-infusi.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true
+  }
+]
