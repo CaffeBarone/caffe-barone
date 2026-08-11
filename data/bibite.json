@@ -1,0 +1,99 @@
+[
+  {
+    "id": "acqua-piccola",
+    "nome": "Acqua Piccola",
+    "prezzo": "€ 1.50",
+    "miniDescrizione": "Acqua minerale 0.5L (Naturale o Frizzante).",
+    "descrizioneCompleta": "Bottiglietta d'acqua minerale da 50cl.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/acqua.jpg"
+  },
+  {
+    "id": "estathe-baby-the",
+    "nome": "Estathé / Baby Thé",
+    "prezzo": "€ 2.00",
+    "miniDescrizione": "Thé freddo al Limone o alla Pesca.",
+    "descrizioneCompleta": "Il classico thé freddo nei gusti tradizionali limone o pesca.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/estathe.jpg"
+  },
+  {
+    "id": "bibite-lattina",
+    "nome": "Bibite in Lattina",
+    "prezzo": "€ 2.50",
+    "miniDescrizione": "Coca-Cola, Fanta, Sprite e altro.",
+    "descrizioneCompleta": "Bibite gassate in lattina da 33cl servite fredde.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/lattina.jpg"
+  },
+  {
+    "id": "bibite-vetro",
+    "nome": "Bibite in Vetro",
+    "prezzo": "€ 3.00",
+    "miniDescrizione": "Coca-Cola, Fanta, Sprite in bottiglia di vetro.",
+    "descrizioneCompleta": "Bibite gassate in elegante bottiglia di vetro.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/vetro.jpg"
+  },
+  {
+    "id": "fuzetea-lemonade",
+    "nome": "FuzeTea / Lemonade",
+    "prezzo": "€ 3.00",
+    "miniDescrizione": "FuzeTea o limonata rinfrescante.",
+    "descrizioneCompleta": "Thé freddo arricchito con note di frutta ed erbe o limonata dissetante.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/fuzetea.jpg"
+  },
+  {
+    "id": "kinley-tonic-water",
+    "nome": "Kinley Tonic Water",
+    "prezzo": "€ 3.00",
+    "miniDescrizione": "Acqua tonica Kinley.",
+    "descrizioneCompleta": "Acqua tonica frizzante con piacevole nota amara di chino.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/kinley.jpg"
+  },
+  {
+    "id": "energy-drink",
+    "nome": "Energy Drink",
+    "prezzo": "€ 3.50",
+    "miniDescrizione": "RedBull, Monster.",
+    "descrizioneCompleta": "Bevande energetiche per una carica immediata di vitalità.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/redbull.jpg"
+  },
+  {
+    "id": "birra-vetro-33",
+    "nome": "Birra in Vetro 0,33L",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Birra bionda in bottiglia di vetro 33cl.",
+    "descrizioneCompleta": "Selezione di birre in bottiglia da 33cl servite molto fredde.",
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/birra-vetro.jpg"
+  },
+  {
+    "id": "birra-lattina",
+    "nome": "Birra in Lattina",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Birra in lattina servita fredda.",
+    "descrizioneCompleta": "Birra formato lattina, ideale da sorseggiare o d'asporto.",
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/birra-lattina.jpg"
+  }
+]
