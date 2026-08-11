@@ -1,0 +1,22 @@
+[
+  {
+    "id": "granita",
+    "nome": "Granita",
+    "prezzo": "€ 3.00",
+    "miniDescrizione": "Fresca granita nei gusti Melone, Fragola, Amarena, Limone.",
+    "descrizioneCompleta": "Dissetante granita artigianale preparata con ingredienti freschi. Scegli il tuo gusto preferito tra Melone, Fragola, Amarena e Limone.",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "immagine": "images/granita.jpg"
+  },
+  {
+    "id": "frappe",
+    "nome": "Frappè",
+    "prezzo": "€ 5.00",
+    "miniDescrizione": "Cremoso frappè preparato con i tuoi gusti gelato preferiti.",
+    "descrizioneCompleta": "Delizioso e cremoso frappè frullato al momento. Scegli le tue palline di gelato preferite dal banco e crea la combinazione perfetta.",
+    "glutenFree": true,
+    "immagine": "images/frappe.jpg"
+  }
+]

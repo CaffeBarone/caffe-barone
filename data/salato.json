@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ortolano",
+    "nome": "Panino Ortolano",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Melanzane, peperoni, zucchine, formaggio.",
+    "descrizioneCompleta": "Panino vegetariano ricco e saporito preparato con melanzane, peperoni e zucchine grigliate accoppiate a formaggio fuso.",
+    "immagine": "images/ortolano.jpg"
+  },
+  {
+    "id": "boscaiolo",
+    "nome": "Panino Boscaiolo",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Prosciutto crudo, pecorino, rucola.",
+    "descrizioneCompleta": "Gusto deciso e tradizionale con prosciutto crudo di alta qualità, scaglie di pecorino saporito e rucola fresca.",
+    "immagine": "images/boscaiolo.jpg"
+  },
+  {
+    "id": "il-pollo",
+    "nome": "Panino Il Pollo",
+    "prezzo": "€ 5.00",
+    "miniDescrizione": "Cotoletta, salsa Caesarror, pomodoro, insalata.",
+    "descrizioneCompleta": "Panino ricco con croccante cotoletta di pollo, pomodoro fresco a fette, insalata e speciale salsa Caesarror.",
+    "immagine": "images/pollo.jpg"
+  },
+  {
+    "id": "il-leggero",
+    "nome": "Panino Il Leggero",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Fesa di tacchino, pomodoro, mozzarella e insalata.",
+    "descrizioneCompleta": "Un'opzione fresca, magra e bilanciata: fesa di tacchino, mozzarella fresca, pomodoro e foglia d'insalata.",
+    "immagine": "images/leggero.jpg"
+  },
+  {
+    "id": "soglia",
+    "nome": "Panino Soglia",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Prosciutto cotto e fontina.",
+    "descrizioneCompleta": "Il grande classico con abbondante prosciutto cotto di qualità e fontina filante.",
+    "immagine": "images/soglia.jpg"
+  },
+  {
+    "id": "caprese",
+    "nome": "Panino Caprese",
+    "prezzo": "€ 4.00",
+    "miniDescrizione": "Pomodoro, mozzarella e insalata.",
+    "descrizioneCompleta": "Panino fresco e vegetariano con fette di pomodoro maturo, mozzarella di latte e insalata.",
+    "immagine": "images/caprese.jpg"
+  },
+  {
+    "id": "toast",
+    "nome": "Toast Classico",
+    "prezzo": "€ 3.00",
+    "miniDescrizione": "Prosciutto cotto e fontina caldi.",
+    "descrizioneCompleta": "Toast di pane in cassetta dorato e piastrato, farcito con prosciutto cotto e fontina fusa.",
+    "immagine": "images/toast.jpg"
+  },
+  {
+    "id": "tramezzino",
+    "nome": "Tramezzino",
+    "prezzo": "€ 1.50",
+    "miniDescrizione": "Tonno e maionese.",
+    "descrizioneCompleta": "Morbido tramezzino di pane bianco farcito con classica crema di tonno e maionese.",
+    "immagine": "images/tramezzino.jpg"
+  },
+  {
+    "id": "panino-piccolo",
+    "nome": "Panino Piccolo",
+    "prezzo": "€ 1.50",
+    "miniDescrizione": "Piccolo panino farcito del giorno.",
+    "descrizioneCompleta": "Bocconcino di pane farcito, ideale per uno snack veloce e leggero.",
+    "immagine": "images/panino-piccolo.jpg"
+  }
+]

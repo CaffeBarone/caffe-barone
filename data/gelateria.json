@@ -1,0 +1,66 @@
+[
+  {
+    "id": "coppetta-piccola",
+    "nome": "Coppetta Piccola",
+    "prezzo": "€ 2.50",
+    "miniDescrizione": "Gelato artigianale in coppetta piccola (gusti a scelta).",
+    "descrizioneCompleta": "Scegli i tuoi gusti preferiti tra le nostre opzioni classiche e speciali per la tua coppetta piccola. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato.jpg"
+  },
+  {
+    "id": "coppetta-media",
+    "nome": "Coppetta Media",
+    "prezzo": "€ 3.00",
+    "miniDescrizione": "Gelato artigianale in coppetta media (gusti a scelta).",
+    "descrizioneCompleta": "Coppetta di dimensioni medie, ideale per combinare 2 o 3 gusti a tua scelta tra la nostra selezione di gelati artigianali freschi.",
+    "immagine": "images/gelato.jpg"
+  },
+  {
+    "id": "coppetta-grande",
+    "nome": "Coppetta Grande",
+    "prezzo": "€ 3.50",
+    "miniDescrizione": "Gelato artigianale in coppetta grande (gusti a scelta).",
+    "descrizioneCompleta": "La porzione più generosa per gli amanti del gelato. Abbina più gusti a tua scelta e arricchisci la tua esperienza con i nostri topping.",
+    "immagine": "images/gelato.jpg"
+  },
+  {
+    "id": "cono-piccolo",
+    "nome": "Cono Piccolo",
+    "prezzo": "€ 2.50",
+    "miniDescrizione": "Cono cialda croccante misura piccola.",
+    "descrizioneCompleta": "Croccante cono cialda riempito con i gusti gelato che preferisci.",
+    "immagine": "images/cono.jpg"
+  },
+  {
+    "id": "cono-grande",
+    "nome": "Cono Grande",
+    "prezzo": "€ 3.50",
+    "miniDescrizione": "Cono cialda croccante misura grande.",
+    "descrizioneCompleta": "Cono cialda formato grande, perfetto per ospitare abbondanti palline di gelato a scelta.",
+    "immagine": "images/cono.jpg"
+  },
+  {
+    "id": "vaschetta-gelato-05",
+    "nome": "Vaschetta Gelato 0.5 kg",
+    "prezzo": "€ 13.00",
+    "miniDescrizione": "Vaschetta d'asporto da 500g.",
+    "descrizioneCompleta": "Vaschetta isotermica d'asporto da mezzo chilo, ideale per 2-3 persone. Personalizzabile con i gusti del giorno.",
+    "immagine": "images/vaschetta.jpg"
+  },
+  {
+    "id": "vaschetta-gelato-075",
+    "nome": "Vaschetta Gelato 0.75 kg",
+    "prezzo": "€ 19.50",
+    "miniDescrizione": "Vaschetta d'asporto da 750g.",
+    "descrizioneCompleta": "Vaschetta isotermica d'asporto da 750 grammi, ideale per la famiglia o da condividere.",
+    "immagine": "images/vaschetta.jpg"
+  },
+  {
+    "id": "vaschetta-gelato-1",
+    "nome": "Vaschetta Gelato 1 kg",
+    "prezzo": "€ 23.00",
+    "miniDescrizione": "Vaschetta d'asporto da 1 kg.",
+    "descrizioneCompleta": "Vaschetta formato maxi d'asporto da 1 chilo. Scegli fino a 4 o 5 gusti differenti per la tua tavola.",
+    "immagine": "images/vaschetta.jpg"
+  }
+]
