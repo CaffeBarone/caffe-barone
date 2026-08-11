@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 4. INIZIALIZZA PULSANTE FLUTTUANTE WHATSAPP
   initSocialIntegration();
+
+  // 5. INIZIALIZZA POPUP RECENSIONE GOOGLE (20 SECONDI)
+  initReviewPopup();
 });
 
 /* ==========================================
@@ -170,9 +173,10 @@ async function loadMainCatalog() {
   const categories = [
     { title: "🍦 Gelateria", file: "data/gelateria.json" },
     { title: "🍦 Yogurteria", file: "data/yogurteria.json" },
-    { title: "🍧 Granite", file: "data/granite.json" },
+    { title: "☕ Caffetteria", file: "data/caffetteria.json" },
     { title: "🥐 Pasticceria", file: "data/pasticceria.json" },
     { title: "🥪 Salato", file: "data/salato.json" },
+    { title: "🍧 Granite", file: "data/granite.json" },
     { title: "🥤 Bibite & Bevande", file: "data/bibite.json" },
     { title: "🥃 Shot", file: "data/shot.json" },
     { title: "🍹 Drink Alcolici", file: "data/drink-alcolici.json" },
@@ -282,11 +286,26 @@ function toggleExpansion(grid, selectedCard, product) {
 
     sessionStorage.setItem(`prod_${product.id}`, JSON.stringify(product));
 
+    // Generazione dinamica dei badge alimentari
+    let badgesHTML = "";
+    if (product.glutenFree) {
+      badgesHTML += `<span class="badge badge-gluten-free">🌾 Senza Glutine</span> `;
+    }
+    if (product.lactoseFree) {
+      badgesHTML += `<span class="badge badge-lactose-free">🥛 Senza Lattosio</span> `;
+    }
+    if (product.vegan) {
+      badgesHTML += `<span class="badge badge-vegan">🌱 Vegano</span> `;
+    }
+
     panel.innerHTML = `
       <div class="expansion-header">
         <strong>${product.nome}</strong>
         <span class="expansion-price">${product.prezzo}</span>
       </div>
+      
+      ${badgesHTML ? `<div class="product-badges-wrapper">${badgesHTML}</div>` : ''}
+
       <p class="expansion-desc">${product.miniDescrizione}</p>
       <a href="dettaglio.html?id=${product.id}" class="btn-more">Mostra di più</a>
     `;
@@ -352,7 +371,7 @@ function initSearchAndFilters() {
       let visibleCount = 0;
 
       cards.forEach(card => {
-        const name = card.dataset.name;
+        const name = card.dataset.name || "";
         const matchesSearch = name.includes(term);
         
         let matchesDiet = true;
@@ -449,4 +468,46 @@ function initSocialIntegration() {
   `;
 
   document.body.appendChild(floatBtn);
+}
+
+/* ==========================================
+   10. GESTIONE POPUP RECENSIONE GOOGLE (20 SECONDI)
+   ========================================== */
+function initReviewPopup() {
+  const reviewModal = document.getElementById("review-modal");
+  const reviewYesBtn = document.getElementById("review-yes-btn");
+  const reviewLaterBtn = document.getElementById("review-later-btn");
+
+  if (!reviewModal) return;
+
+  const lastPrompt = localStorage.getItem("caffe_barone_review_prompt");
+  const now = new Date().getTime();
+  const ONE_DAY = 24 * 60 * 60 * 1000; // 24 ore
+
+  if (!lastPrompt || (now - parseInt(lastPrompt, 10)) > ONE_DAY) {
+    setTimeout(() => {
+      reviewModal.classList.add("active");
+      reviewModal.setAttribute("aria-hidden", "false");
+    }, 20000); // 20 secondi
+  }
+
+  const closeReviewModal = () => {
+    reviewModal.classList.remove("active");
+    reviewModal.setAttribute("aria-hidden", "true");
+    localStorage.setItem("caffe_barone_review_prompt", new Date().getTime().toString());
+  };
+
+  if (reviewYesBtn) {
+    reviewYesBtn.addEventListener("click", closeReviewModal);
+  }
+
+  if (reviewLaterBtn) {
+    reviewLaterBtn.addEventListener("click", closeReviewModal);
+  }
+
+  reviewModal.addEventListener("click", (e) => {
+    if (e.target === reviewModal) {
+      closeReviewModal();
+    }
+  });
 }
