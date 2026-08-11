@@ -229,33 +229,41 @@ body {
   box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
 }
 
-/* FILTRI ALIMENTARI */
+/* FILTRI ALIMENTARI RAPIDI */
 .dietary-filters {
   display: flex;
   gap: 8px;
   max-width: 600px;
   margin: 10px auto 0 auto;
   overflow-x: auto;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.dietary-filters::-webkit-scrollbar {
+  display: none;
 }
 
 .diet-btn {
   background-color: var(--input-bg);
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-muted);
   white-space: nowrap;
   cursor: pointer;
   transition: var(--transition);
+  flex-shrink: 0;
 }
 
 .diet-btn.active {
   background-color: var(--accent-color);
   color: #ffffff;
   border-color: var(--accent-color);
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
 }
 
 /* ==========================================
@@ -516,7 +524,7 @@ body {
 .drawer-overlay.active .drawer-nav a:nth-child(3) { transition-delay: 0.20s; }
 .drawer-overlay.active .drawer-nav a:nth-child(4) { transition-delay: 0.25s; }
 .drawer-overlay.active .drawer-nav a:nth-child(5) { transition-delay: 0.30s; }
-.drawer-overlay.active .drawer-divider    { transition-delay: 0.35s; }
+.drawer-divider    { transition-delay: 0.35s; }
 .drawer-overlay.active .drawer-nav a:nth-child(7) { transition-delay: 0.40s; }
 
 .drawer-nav a {
@@ -841,4 +849,118 @@ body {
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.3;
+}
+
+/* ==========================================
+   12. POPUP RECENSIONE GOOGLE (20 SECONDI)
+   ========================================== */
+.review-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 15px;
+}
+
+.review-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.review-modal-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-strong);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.review-modal-overlay.active .review-modal-card {
+  transform: translateY(0);
+}
+
+.review-modal-card .review-logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid var(--primary-color);
+}
+
+.review-modal-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.review-modal-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0 0 18px 0;
+  line-height: 1.4;
+}
+
+.review-stars-preview {
+  font-size: 24px;
+  color: #fbbc04;
+  margin-bottom: 16px;
+}
+
+.review-modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-review-yes {
+  background-color: #4285F4;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-review-yes:hover {
+  background-color: #3367d6;
+}
+
+.btn-review-later {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-review-later:hover {
+  background-color: var(--input-bg);
 }
