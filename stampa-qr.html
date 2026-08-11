@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Stampa QR Code - Caffè Barone</title>
+  <style>
+    @page {
+      size: A5 portrait;
+      margin: 0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .a5-card {
+      width: 148mm;
+      height: 210mm;
+      background: #ffffff;
+      box-sizing: border-box;
+      padding: 12mm 10mm;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border: 3px solid #1e4d2b;
+      border-radius: 12px;
+      position: relative;
+    }
+    .logo-img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1e4d2b;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .title {
+      font-size: 24px;
+      color: #1e4d2b;
+      margin: 8px 0 2px 0;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #555;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .qr-container {
+      background: #ffffff;
+      padding: 12px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      border: 1px solid #e0e0e0;
+      margin: 10px 0;
+    }
+    .qr-container img {
+      display: block;
+      width: 170px;
+      height: 170px;
+    }
+    .instruction-box {
+      background-color: #f0f7f2;
+      border-left: 4px solid #1e4d2b;
+      padding: 10px 15px;
+      border-radius: 6px;
+      width: 85%;
+    }
+    .instruction-text {
+      font-size: 14px;
+      color: #2c3e50;
+      margin: 0;
+      font-weight: 600;
+    }
+    .footer-text {
+      font-size: 11px;
+      color: #7f8c8d;
+      margin-top: 5px;
+    }
+
+    @media print {
+      body {
+        background: none;
+      }
+      .a5-card {
+        border: none;
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="a5-card">
+    <div>
+      <img src="logo.jpg" alt="Caffè Barone" class="logo-img">
+      <h1 class="title">Caffè Barone</h1>
+      <p class="subtitle">Caffetteria • Pasticceria • Gelateria</p>
+    </div>
+
+    <div>
+      <div class="qr-container">
+        <!-- QR Code collegato al tuo link ufficiale -->
+        <img id="qr-image" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fcaffebarone.github.io%2Fcaffe-barone%2F" alt="Inquadra il QR Code">
+      </div>
+    </div>
+
+    <div class="instruction-box">
+      <p class="instruction-text">📱 Inquadra con la fotocamera per sfogliare il Menù e le Bottiglie!</p>
+    </div>
+
+    <div>
+      <p class="footer-text">📍 Via Vittorio Emanuele II, 2 - Firenze</p>
+    </div>
+  </div>
+
+</body>
+</html>
