@@ -470,7 +470,7 @@ body {
   opacity: 0.9;
 }
 
-/* DRAWER (ANIMAZIONE SCIVOLAMENTO ELASTICO) */
+/* DRAWER */
 .drawer-content {
   position: absolute;
   top: 0;
@@ -506,7 +506,6 @@ body {
   gap: 14px;
 }
 
-/* ANIMAZIONE A CASCATA DEI LINK DEL MENU */
 .drawer-nav a, .drawer-divider {
   opacity: 0;
   transform: translateX(20px);
@@ -852,7 +851,7 @@ body {
 }
 
 /* ==========================================
-   12. POPUP RECENSIONE GOOGLE (20 SECONDI)
+   12. POPUP RECENSIONE GOOGLE
    ========================================== */
 .review-modal-overlay {
   position: fixed;
