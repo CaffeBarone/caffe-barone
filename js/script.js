@@ -140,7 +140,7 @@ function updateBusinessStatus() {
   if (!badge || !statusText) return;
 
   const now = new Date();
-  const day = now.getDay(); // 0 = Dom, 1 = Lun, 2 = Mar, ...
+  const day = now.getDay();
   const currentTime = now.getHours() * 60 + now.getMinutes();
 
   const openTime = 7 * 60; // 07:00
@@ -148,7 +148,6 @@ function updateBusinessStatus() {
 
   let isOpen = false;
 
-  // Martedì (2) -> Chiuso tutto il giorno
   if (day !== 2) {
     if (currentTime >= openTime && currentTime < closeTime) {
       isOpen = true;
@@ -241,7 +240,6 @@ function renderCategorySection(container, title, products) {
     card.className = "product-card";
     card.dataset.name = prod.nome.toLowerCase();
 
-    // Gestione tag alimentari
     if (prod.glutenFree) card.dataset.glutenFree = "true";
     if (prod.lactoseFree) card.dataset.lactoseFree = "true";
     if (prod.vegan) card.dataset.vegan = "true";
@@ -286,7 +284,6 @@ function toggleExpansion(grid, selectedCard, product) {
 
     sessionStorage.setItem(`prod_${product.id}`, JSON.stringify(product));
 
-    // Generazione dinamica dei badge alimentari
     let badgesHTML = "";
     if (product.glutenFree) {
       badgesHTML += `<span class="badge badge-gluten-free">🌾 Senza Glutine</span> `;
@@ -482,13 +479,13 @@ function initReviewPopup() {
 
   const lastPrompt = localStorage.getItem("caffe_barone_review_prompt");
   const now = new Date().getTime();
-  const ONE_DAY = 24 * 60 * 60 * 1000; // 24 ore
+  const ONE_DAY = 24 * 60 * 60 * 1000;
 
   if (!lastPrompt || (now - parseInt(lastPrompt, 10)) > ONE_DAY) {
     setTimeout(() => {
       reviewModal.classList.add("active");
       reviewModal.setAttribute("aria-hidden", "false");
-    }, 20000); // 20 secondi
+    }, 20000);
   }
 
   const closeReviewModal = () => {
