@@ -5,7 +5,11 @@
     "prezzo": "€ 4.00",
     "miniDescrizione": "Pancetta, crema ai funghi, formaggio, insalata.",
     "descrizioneCompleta": "Panino dal saporito gusto rustico farcito con croccante pancetta, cremosa salsa ai funghi, formaggio fuso e insalata fresca.",
-    "immagine": "images/rustico.jpg"
+    "immagine": "images/rustico.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
   {
     "id": "toscano",
@@ -13,7 +17,11 @@
     "prezzo": "€ 4.00",
     "miniDescrizione": "Prosciutto crudo, pecorino, rucola.",
     "descrizioneCompleta": "Gusto deciso e tradizionale della tradizione toscana: prosciutto crudo di alta qualità, scaglie di pecorino saporito e rucola fresca.",
-    "immagine": "images/toscano.jpg"
+    "immagine": "images/toscano.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
   {
     "id": "ortolano",
@@ -21,7 +29,11 @@
     "prezzo": "€ 5.00",
     "miniDescrizione": "Melanzane, peperoni, zucchine, formaggio.",
     "descrizioneCompleta": "Panino vegetariano ricco e saporito preparato con melanzane, peperoni e zucchine grigliate accoppiate a formaggio fuso.",
-    "immagine": "images/ortolano.jpg"
+    "immagine": "images/ortolano.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "boscaiolo",
@@ -29,7 +41,11 @@
     "prezzo": "€ 4.00",
     "miniDescrizione": "Prosciutto crudo, pecorino, rucola.",
     "descrizioneCompleta": "Gusto deciso e tradizionale con prosciutto crudo di alta qualità, scaglie di pecorino saporito e rucola fresca.",
-    "immagine": "images/boscaiolo.jpg"
+    "immagine": "images/boscaiolo.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
   {
     "id": "il-leggero",
@@ -37,7 +53,11 @@
     "prezzo": "€ 4.00",
     "miniDescrizione": "Fesa di tacchino, pomodoro, mozzarella e insalata.",
     "descrizioneCompleta": "Un'opzione fresca, magra e bilanciata: fesa di tacchino, mozzarella fresca, pomodoro e foglia d'insalata.",
-    "immagine": "images/leggero.jpg"
+    "immagine": "images/leggero.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
   {
     "id": "caprese",
@@ -45,7 +65,11 @@
     "prezzo": "€ 4.00",
     "miniDescrizione": "Pomodoro, mozzarella e insalata.",
     "descrizioneCompleta": "Panino fresco e vegetariano con fette di pomodoro maturo, mozzarella di latte e insalata.",
-    "immagine": "images/caprese.jpg"
+    "immagine": "images/caprese.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "toast",
@@ -53,7 +77,11 @@
     "prezzo": "€ 3.00",
     "miniDescrizione": "Prosciutto cotto e fontina caldi.",
     "descrizioneCompleta": "Toast di pane in cassetta dorato e piastrato, farcito con prosciutto cotto e fontina fusa.",
-    "immagine": "images/toast.jpg"
+    "immagine": "images/toast.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
   {
     "id": "panino-piccolo",
@@ -61,22 +89,34 @@
     "prezzo": "€ 1.50",
     "miniDescrizione": "Piccolo panino farcito del giorno.",
     "descrizioneCompleta": "Bocconcino di pane farcito, ideale per uno snack veloce e leggero.",
-    "immagine": "images/panino-piccolo.jpg"
+    "immagine": "images/panino-piccolo.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
-   {
+  {
     "id": "soglia",
     "nome": "Panino Soglia",
     "prezzo": "€ 4.00",
     "miniDescrizione": "Prosciutto cotto e fontina.",
     "descrizioneCompleta": "Il grande classico con abbondante prosciutto cotto di qualità e fontina filante.",
-    "immagine": "images/soglia.jpg"
+    "immagine": "images/soglia.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   },
-   {
+  {
     "id": "il-pollo",
     "nome": "Panino Il Pollo",
     "prezzo": "€ 5.00",
     "miniDescrizione": "Cotoletta, salsa Caesarror, pomodoro, insalata.",
     "descrizioneCompleta": "Panino ricco con croccante cotoletta di pollo, pomodoro fresco a fette, insalata e speciale salsa Caesarror.",
-    "immagine": "images/pollo.jpg"
+    "immagine": "images/pollo.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": false
   }
 ]
