@@ -8,18 +8,20 @@
     "immagine": "images/caffe.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "caf_2",
     "nome": "Caffè Decaffeinato",
-    "prezzo": "1,50 €",
-    "miniDescrizione": "Caffè deka aromatico",
-    "descrizioneCompleta": "Espresso decaffeinato dal gusto pieno e avvolgente.",
+    "prezzo": "1,30 €",
+    "miniDescrizione": "Espresso decaffeinato",
+    "descrizioneCompleta": "Caffè espresso decaffeinato con tutto il gusto del vero caffè.",
     "immagine": "images/caffe-deca.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "caf_3",
@@ -30,7 +32,8 @@
     "immagine": "images/caffe-americano.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "caf_5",
@@ -41,7 +44,8 @@
     "immagine": "images/caffe-ginseng.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_6",
@@ -52,7 +56,8 @@
     "immagine": "images/caffe-ginseng.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_7",
@@ -63,7 +68,8 @@
     "immagine": "images/crema-caffe.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_8",
@@ -74,7 +80,8 @@
     "immagine": "images/caffe-shakerato.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "caf_9",
@@ -85,7 +92,8 @@
     "immagine": "images/cappuccino.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_10",
@@ -96,7 +104,8 @@
     "immagine": "images/caffelatte.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_11",
@@ -107,7 +116,8 @@
     "immagine": "images/macchiatone.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_12",
@@ -118,7 +128,8 @@
     "immagine": "images/caffe-corretto.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "caf_13",
@@ -129,7 +140,8 @@
     "immagine": "images/latte-macchiato.jpg",
     "glutenFree": true,
     "lactoseFree": false,
-    "vegan": false
+    "vegan": false,
+    "vegetarian": true
   },
   {
     "id": "caf_14",
@@ -140,6 +152,7 @@
     "immagine": "images/the-infusi.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   }
 ]
