@@ -367,6 +367,44 @@ body {
   color: var(--accent-color);
 }
 
+/* STILI BADGES NELL'ESPANSIONE */
+.product-badges-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--input-bg);
+  color: var(--text-dark);
+}
+
+.badge-gluten-free {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge-lactose-free {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.badge-vegan {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge-vegetarian {
+  background-color: #e2f0d9;
+  color: #2e6b27;
+}
+
 .expansion-desc {
   font-size: 0.9rem;
   color: var(--text-muted);
