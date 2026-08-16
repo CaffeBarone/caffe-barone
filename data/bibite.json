@@ -8,7 +8,8 @@
     "immagine": "images/bibite/acqua-san-benedetto.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "san-benedetto-frizzante-50cl",
@@ -19,7 +20,8 @@
     "immagine": "images/bibite/san-benedetto-frizzante.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "coca-cola-lattina-33cl",
@@ -30,7 +32,8 @@
     "immagine": "images/bibite/coca-cola-lattina.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "coca-cola-zero-lattina-33cl",
@@ -41,7 +44,8 @@
     "immagine": "images/bibite/coca-cola-zero-lattina.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "fanta-lattina-33cl",
@@ -52,7 +56,8 @@
     "immagine": "images/bibite/fanta-lattina.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "lemonsoda-lattina-33cl",
@@ -63,7 +68,8 @@
     "immagine": "images/bibite/lemonsoda-lattina.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "red-bull-lattina-25cl",
@@ -74,7 +80,8 @@
     "immagine": "images/bibite/red-bull.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "coca-cola-vetro-33cl",
@@ -85,7 +92,8 @@
     "immagine": "images/bibite/coca-cola-vetro.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "coca-cola-zero-vetro-33cl",
@@ -96,7 +104,8 @@
     "immagine": "images/bibite/coca-cola-zero-vetro.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "fanta-vetro-33cl",
@@ -107,7 +116,8 @@
     "immagine": "images/bibite/fanta-vetro.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "sprite-vetro-33cl",
@@ -118,7 +128,8 @@
     "immagine": "images/bibite/sprite-vetro.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "kinley-tonic-water-vetro",
@@ -129,7 +140,8 @@
     "immagine": "images/bibite/kinley-tonic.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "fuze-tea-limone-lemongrass",
@@ -140,7 +152,8 @@
     "immagine": "images/bibite/fuze-tea-limone.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "fuze-tea-pesca-rosa",
@@ -151,7 +164,8 @@
     "immagine": "images/bibite/fuze-tea-pesca.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "estathe-deteinato-pesca",
@@ -162,7 +176,8 @@
     "immagine": "images/bibite/estathe-deteinato-pesca.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "san-benedetto-baby-the-limone",
@@ -173,7 +188,8 @@
     "immagine": "images/bibite/san-benedetto-baby-the.jpg",
     "glutenFree": true,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "tennents-super-33cl",
@@ -184,7 +200,8 @@
     "immagine": "images/bibite/tennents-super.jpg",
     "glutenFree": false,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "birra-moretti-33cl",
@@ -195,7 +212,8 @@
     "immagine": "images/bibite/birra-moretti.jpg",
     "glutenFree": false,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   },
   {
     "id": "corona-extra-35cl",
@@ -206,6 +224,7 @@
     "immagine": "images/bibite/corona-extra.jpg",
     "glutenFree": false,
     "lactoseFree": true,
-    "vegan": true
+    "vegan": true,
+    "vegetarian": true
   }
 ]
