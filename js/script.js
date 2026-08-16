@@ -170,13 +170,13 @@ async function loadMainCatalog() {
   const container = document.getElementById("main-catalog");
 
   const categories = [
-    { title: "🍦 Gelateria", file: "data/gelateria.json" },
-    { title: "🍦 Yogurteria", file: "data/yogurteria.json" },
-    { title: "☕ Caffetteria", file: "data/caffetteria.json" },
+    { title: "🍦 Gelateria & Frozen Yogurt", file: "data/gelateria-frozen-yogurt.json" },
+    { title: "🎂 Torte", file: "data/torte.json" },
     { title: "🥐 Pasticceria", file: "data/pasticceria.json" },
     { title: "🥪 Salato", file: "data/salato.json" },
-    { title: "🍧 Granite", file: "data/granite.json" },
+    { title: "🍧 Granite & Frappe", file: "data/granite.json" },
     { title: "🥤 Bibite & Bevande", file: "data/bibite.json" },
+    { title: "☕ Caffetteria", file: "data/caffetteria.json" },
     { title: "🥃 Shot", file: "data/shot.json" },
     { title: "🍹 Drink Alcolici", file: "data/drink-alcolici.json" },
     { title: "🥤 Drink Analcolici", file: "data/drink-analcolici.json" }
@@ -185,14 +185,17 @@ async function loadMainCatalog() {
   for (const cat of categories) {
     try {
       const response = await fetch(cat.file);
-      if (!response.ok) continue;
+      if (!response.ok) {
+        console.warn(`Impossibile caricare il file ${cat.file} (Status: ${response.status})`);
+        continue;
+      }
       const products = await response.json();
 
-      if (products && products.length > 0) {
+      if (products && Array.isArray(products) && products.length > 0) {
         renderCategorySection(container, cat.title, products);
       }
     } catch (error) {
-      console.error(`Errore nel caricamento di ${cat.file}:`, error);
+      console.error(`Errore durante la lettura di ${cat.file}:`, error);
     }
   }
 
@@ -243,6 +246,7 @@ function renderCategorySection(container, title, products) {
     if (prod.glutenFree) card.dataset.glutenFree = "true";
     if (prod.lactoseFree) card.dataset.lactoseFree = "true";
     if (prod.vegan) card.dataset.vegan = "true";
+    if (prod.vegetarian) card.dataset.vegetarian = "true";
 
     card.innerHTML = `
       <div class="product-img-wrapper">
@@ -293,6 +297,9 @@ function toggleExpansion(grid, selectedCard, product) {
     }
     if (product.vegan) {
       badgesHTML += `<span class="badge badge-vegan">🌱 Vegano</span> `;
+    }
+    if (product.vegetarian) {
+      badgesHTML += `<span class="badge badge-vegetarian">🥗 Vegetariano</span> `;
     }
 
     panel.innerHTML = `
@@ -378,6 +385,8 @@ function initSearchAndFilters() {
           matchesDiet = card.dataset.lactoseFree === "true";
         } else if (activeFilter === "vegan") {
           matchesDiet = card.dataset.vegan === "true";
+        } else if (activeFilter === "vegetarian") {
+          matchesDiet = card.dataset.vegetarian === "true";
         }
 
         if (matchesSearch && matchesDiet) {
