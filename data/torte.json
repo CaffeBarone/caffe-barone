@@ -1,0 +1,18 @@
+[
+  {
+    "id": "semifreddo-foresta-nera",
+    "nome": "Semifreddo Foresta Nera Cioccolato e Amarena",
+    "prezzo": "€ 33.00 al kg",
+    "miniDescrizione": "Semifreddo artigianale al cioccolato e amarena con granella.",
+    "descrizioneCompleta": "Golosissimo semifreddo artigianale al gusto cioccolato e amarena, ricoperto da una croccante copertura di cioccolato e granella di nocciole.",
+    "immagine": "images/CaffeBarone_SemifreddoForestaNeraCioccolatoEAmarena.jpg"
+  },
+  {
+    "id": "torta-croccantino-amarena",
+    "nome": "Torta Croccantino e Amarena",
+    "prezzo": "€ 38.00 al kg",
+    "miniDescrizione": "Torta semifreddo con glassa rossa all'amarena e granella croccante.",
+    "descrizioneCompleta": "Raffinata torta semifreddo al croccantino e amarena, rifinita con una brillante glassa all'amarena, crumble croccante e granella alla base.",
+    "immagine": "images/CaffeBarone_TortaCroccantinoAmarena.jpg"
+  }
+]
