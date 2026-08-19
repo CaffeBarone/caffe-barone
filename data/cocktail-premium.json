@@ -1,11 +1,11 @@
 [
   {
-    "id": "premium-gin-tonic",
-    "nome": "Premium Gin Tonic",
+    "id": "premium-cocktail",
+    "nome": "Premium Cocktail",
     "prezzo": "10,00 €",
-    "miniDescrizione": "Gin tonic preparato con la nostra selezione di gin premium.",
-    "descrizioneCompleta": "Scegli la tua etichetta preferita tra i nostri gin d'eccellenza: Roku, Capri, J.Rose, Hendrick's, Etsu Japan, Mare, Malfy e tanti altri, abbinati alla tonica ideale.",
-    "immagine": "images/cocktail_premium/premium-gin-tonic.jpg",
+    "miniDescrizione": "cocktail dal nostro menu, ma con un distillato a tua scelta dal nostro catalogo di alta qualità.",
+    "descrizioneCompleta": "Scegli la tua etichetta preferita tra i nostri distillati di alta qualità",
+    "immagine": "images/cocktail_premium/premium-cocktail.jpg",
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
