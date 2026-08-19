@@ -13,12 +13,12 @@
     "alcoholic": true
   },
   {
-    "id": "si-e-rosa-ha-da-sciuri",
-    "nome": "Si è rosa ha da sciurì",
+    "id": "A-ros",
+    "nome": "A ros cchiu' bell ten e spin",
     "prezzo": "9,00 €",
     "miniDescrizione": "Vodka, dry vermouth, sciroppo alle rose, lime e tonic water.",
     "descrizioneCompleta": "Raffinata creazione a base di vodka, dry vermouth, profumato sciroppo alle rose, lime e acqua tonica.",
-    "immagine": "images/cocktail_special/si-e-rosa.jpg",
+    "immagine": "images/cocktail_special/ros-bell.jpg",
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
@@ -26,12 +26,12 @@
     "alcoholic": true
   },
   {
-    "id": "o-ccafe-a-dda-scennere",
-    "nome": "O ccafè a 'dda scennere a coda 'e zoccola",
+    "id": "Na-'-tazzulell-è-café",
+    "nome": "Na ' tazzulell è café",
     "prezzo": "9,00 €",
     "miniDescrizione": "Mezcal, sciroppo al caffè, bitter e chinotto.",
     "descrizioneCompleta": "Cocktail deciso e affumicato: Mezcal, sciroppo artigianale al caffè, bitter e una nota finale di chinotto.",
-    "immagine": "images/cocktail_special/o-ccafe.jpg",
+    "immagine": "images/cocktail_special/tazzulell.jpg",
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
