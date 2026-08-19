@@ -236,13 +236,25 @@ body {
   max-width: 600px;
   margin: 10px auto 0 auto;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--input-bg);
 }
 
 .dietary-filters::-webkit-scrollbar {
-  display: none;
+  height: 5px;
+  display: block;
+}
+
+.dietary-filters::-webkit-scrollbar-track {
+  background: var(--input-bg);
+  border-radius: 10px;
+}
+
+.dietary-filters::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
 }
 
 .diet-btn {
