@@ -8,7 +8,7 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "immagine": "images/granita.jpg"
+    "immagine": "images/granita/granita.jpg"
   },
   {
     "id": "frappe",
@@ -17,6 +17,6 @@
     "miniDescrizione": "Cremoso frappè preparato con i tuoi gusti gelato preferiti.",
     "descrizioneCompleta": "Delizioso e cremoso frappè frullato al momento. Scegli le tue palline di gelato preferite dal banco e crea la combinazione perfetta.",
     "glutenFree": true,
-    "immagine": "images/frappe.jpg"
+    "immagine": "images/granita/frappe.jpg"
   }
 ]
