@@ -1,0 +1,62 @@
+[
+  {
+    "id": "yogurt-piccolo",
+    "nome": "Yogurt Piccolo",
+    "prezzo": "3,50 €",
+    "miniDescrizione": "Yogurt magro senza lattosio formato piccolo.",
+    "descrizioneCompleta": "Fresco yogurt senza lattosio formato piccolo. Topping e variegature a scelta tra: Rocher, Cioccolato Fondente, Cioccolato Bianco, Smarties, Zuccherini, Granella di Nocciole, Granella di Pistacchio, Crumble di Cioccolato, Crumble di Cioccolato Bianco.",
+    "immagine": "images/yogurt/yogurt-piccolo.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "yogurt-grande",
+    "nome": "Yogurt Grande",
+    "prezzo": "4,50 €",
+    "miniDescrizione": "Yogurt magro senza lattosio formato grande.",
+    "descrizioneCompleta": "Fresco yogurt senza lattosio formato grande. Topping e variegature a scelta tra: Rocher, Cioccolato Fondente, Cioccolato Bianco, Smarties, Zuccherini, Granella di Nocciole, Granella di Pistacchio, Crumble di Cioccolato, Crumble di Cioccolato Bianco.",
+    "immagine": "images/yogurt/yogurt-grande.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "vaschetta-yogurt-05kg",
+    "nome": "Vaschetta Yogurt 0.5 kg",
+    "prezzo": "15,00 €",
+    "miniDescrizione": "Vaschetta d'asporto di yogurt senza lattosio da 500g.",
+    "descrizioneCompleta": "Vaschetta d'asporto da 500g di fresco yogurt senza lattosio. Personalizzabile con topping e variegature a scelta.",
+    "immagine": "images/yogurt/vaschetta-05.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "vaschetta-yogurt-075kg",
+    "nome": "Vaschetta Yogurt 0.75 kg",
+    "prezzo": "21,50 €",
+    "miniDescrizione": "Vaschetta d'asporto di yogurt senza lattosio da 750g.",
+    "descrizioneCompleta": "Vaschetta d'asporto da 750g di fresco yogurt senza lattosio. Personalizzabile con topping e variegature a scelta.",
+    "immagine": "images/yogurt/vaschetta-075.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "vaschetta-yogurt-1kg",
+    "nome": "Vaschetta Yogurt 1 kg",
+    "prezzo": "25,00 €",
+    "miniDescrizione": "Vaschetta d'asporto di yogurt senza lattosio da 1 kg.",
+    "descrizioneCompleta": "Vaschetta d'asporto da 1 kg di fresco yogurt senza lattosio. Personalizzabile con topping e variegature a scelta.",
+    "immagine": "images/yogurt/vaschetta-1.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": false,
+    "vegetarian": true
+  }
+]

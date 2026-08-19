@@ -1,0 +1,98 @@
+[
+  {
+    "id": "gelato-coppetta-piccola",
+    "nome": "Coppetta Piccola",
+    "prezzo": "2,50 €",
+    "miniDescrizione": "Gelato artigianale in coppetta piccola (gusti a scelta).",
+    "descrizioneCompleta": "Gelato artigianale in coppetta piccola. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/coppetta-piccola.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "gelato-coppetta-media",
+    "nome": "Coppetta Media",
+    "prezzo": "3,00 €",
+    "miniDescrizione": "Gelato artigianale in coppetta media (gusti a scelta).",
+    "descrizioneCompleta": "Gelato artigianale in coppetta media. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/coppetta-media.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "gelato-coppetta-grande",
+    "nome": "Coppetta Grande",
+    "prezzo": "3,50 €",
+    "miniDescrizione": "Gelato artigianale in coppetta grande (gusti a scelta).",
+    "descrizioneCompleta": "Gelato artigianale in coppetta grande. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/coppetta-grande.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "gelato-cono-piccolo",
+    "nome": "Cono Piccolo",
+    "prezzo": "2,50 €",
+    "miniDescrizione": "Cono cialda croccante misura piccola con gusti a scelta.",
+    "descrizioneCompleta": "Croccante cono cialda misura piccola. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/cono-piccolo.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "gelato-cono-grande",
+    "nome": "Cono Grande",
+    "prezzo": "3,50 €",
+    "miniDescrizione": "Cono cialda croccante misura grande con gusti a scelta.",
+    "descrizioneCompleta": "Croccante cono cialda misura grande. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/cono-grande.jpg",
+    "glutenFree": false,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "vaschetta-gelato-05kg",
+    "nome": "Vaschetta Gelato 0.5 kg",
+    "prezzo": "13,00 €",
+    "miniDescrizione": "Vaschetta d'asporto da 500g.",
+    "descrizioneCompleta": "Vaschetta d'asporto da 500g personalizzabile con i gusti a scelta del giorno: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/vaschetta-05.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "vaschetta-gelato-075kg",
+    "nome": "Vaschetta Gelato 0.75 kg",
+    "prezzo": "19,50 €",
+    "miniDescrizione": "Vaschetta d'asporto da 750g.",
+    "descrizioneCompleta": "Vaschetta d'asporto da 750g personalizzabile con i gusti a scelta del giorno: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/vaschetta-075.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  },
+  {
+    "id": "vaschetta-gelato-1kg",
+    "nome": "Vaschetta Gelato 1 kg",
+    "prezzo": "23,00 €",
+    "miniDescrizione": "Vaschetta d'asporto da 1 kg.",
+    "descrizioneCompleta": "Vaschetta d'asporto da 1 kg personalizzabile con i gusti a scelta del giorno: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
+    "immagine": "images/gelato/vaschetta-1.jpg",
+    "glutenFree": true,
+    "lactoseFree": false,
+    "vegan": false,
+    "vegetarian": true
+  }
+]
