@@ -170,16 +170,17 @@ async function loadMainCatalog() {
   const container = document.getElementById("main-catalog");
 
   const categories = [
-    { title: "🍦 Gelateria & Frozen Yogurt", file: "data/gelateria-frozen-yogurt.json" },
+    { title: "🍦 Gelateria", file: "data/gelato.json" },
+    { title: "🍦 Frozen Yogurt", file: "data/yogurt.json" },
     { title: "🎂 Torte", file: "data/torte.json" },
     { title: "🥐 Pasticceria", file: "data/pasticceria.json" },
-    { title: "🥪 Salato", file: "data/salato.json" },
     { title: "🍧 Granite & Frappe", file: "data/granite.json" },
+    { title: "🥪 Salato", file: "data/salato.json" },
     { title: "🥤 Bibite & Bevande", file: "data/bibite.json" },
-    { title: "☕ Caffetteria", file: "data/caffetteria.json" },
     { title: "🥃 Shot", file: "data/shot.json" },
     { title: "🍹 Drink Alcolici", file: "data/drink-alcolici.json" },
-    { title: "🥤 Drink Analcolici", file: "data/drink-analcolici.json" }
+    { title: "🥤 Drink Analcolici", file: "data/drink-analcolici.json" },
+    { title: "☕ Caffetteria", file: "data/caffetteria.json" }
   ];
 
   for (const cat of categories) {
