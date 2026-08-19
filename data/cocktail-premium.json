@@ -3,7 +3,7 @@
     "id": "premium-cocktail",
     "nome": "Premium Cocktail",
     "prezzo": "10,00 €",
-    "miniDescrizione": "cocktail dal nostro menu, ma con un distillato a tua scelta dal nostro catalogo di alta qualità.",
+    "miniDescrizione": "cocktail a scelta dal nostro menu, ma con un distillato a tua scelta dal nostro catalogo di alta qualità.",
     "descrizioneCompleta": "Scegli la tua etichetta preferita tra i nostri distillati di alta qualità",
     "immagine": "images/cocktail_premium/premium-cocktail.jpg",
     "glutenFree": true,
