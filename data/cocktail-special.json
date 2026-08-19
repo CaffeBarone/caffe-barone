@@ -9,7 +9,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "si-e-rosa-ha-da-sciuri",
@@ -21,7 +22,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "o-ccafe-a-dda-scennere",
@@ -33,6 +35,7 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   }
 ]
