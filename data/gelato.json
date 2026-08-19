@@ -7,7 +7,7 @@
     "descrizioneCompleta": "Gelato artigianale in coppetta piccola. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
     "immagine": "images/gelato/coppetta-piccola.jpg",
     "glutenFree": true,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -19,7 +19,7 @@
     "descrizioneCompleta": "Gelato artigianale in coppetta media. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
     "immagine": "images/gelato/coppetta-media.jpg",
     "glutenFree": true,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -31,7 +31,7 @@
     "descrizioneCompleta": "Gelato artigianale in coppetta grande. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
     "immagine": "images/gelato/coppetta-grande.jpg",
     "glutenFree": true,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -43,7 +43,7 @@
     "descrizioneCompleta": "Croccante cono cialda misura piccola. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
     "immagine": "images/gelato/cono-piccolo.jpg",
     "glutenFree": false,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -55,7 +55,7 @@
     "descrizioneCompleta": "Croccante cono cialda misura grande. Gusti disponibili: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
     "immagine": "images/gelato/cono-grande.jpg",
     "glutenFree": false,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -65,9 +65,9 @@
     "prezzo": "13,00 €",
     "miniDescrizione": "Vaschetta d'asporto da 500g.",
     "descrizioneCompleta": "Vaschetta d'asporto da 500g personalizzabile con i gusti a scelta del giorno: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
-    "immagine": "images/gelato/vaschetta-05.jpg",
+    "immagine": "images/gelato/vaschetta_gelato.jpg",
     "glutenFree": true,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -77,9 +77,9 @@
     "prezzo": "19,50 €",
     "miniDescrizione": "Vaschetta d'asporto da 750g.",
     "descrizioneCompleta": "Vaschetta d'asporto da 750g personalizzabile con i gusti a scelta del giorno: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
-    "immagine": "images/gelato/vaschetta-075.jpg",
+    "immagine": "images/gelato/vaschetta_gelato.jpg",
     "glutenFree": true,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   },
@@ -89,9 +89,9 @@
     "prezzo": "23,00 €",
     "miniDescrizione": "Vaschetta d'asporto da 1 kg.",
     "descrizioneCompleta": "Vaschetta d'asporto da 1 kg personalizzabile con i gusti a scelta del giorno: Fior di latte, Stracciatella, Nocciola, Pistacchio, LimonGo, Oreo, Cremino al lampone, Buontalenti, Crema all'arancia, Romeo e Giulietta (Fondente 70%), Papaya, Fragola, Banana, Kiwi, Variegato amarena.",
-    "immagine": "images/gelato/vaschetta-1.jpg",
+    "immagine": "images/gelato/vaschetta_gelato.jpg",
     "glutenFree": true,
-    "lactoseFree": false,
+    "lactoseFree": true,
     "vegan": false,
     "vegetarian": true
   }
