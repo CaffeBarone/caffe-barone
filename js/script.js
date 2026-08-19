@@ -180,7 +180,7 @@ async function loadMainCatalog() {
     { title: "🥃 Shot", file: "data/shot.json" },
     { title: "🍸 Cocktails Classici (€ 7.00)", file: "data/cocktail-classici.json" },
     { title: "👑 Gli Special del Barone (€ 9.00)", file: "data/cocktail-special.json" },
-    { title: "💎 Premium Gin & Tonic (€ 10.00)", file: "data/cocktail-premium.json" },
+    { title: "💎 Premium (€ 10.00)", file: "data/cocktail-premium.json" },
     { title: "🍹 I nostri Free Alcohol (€ 5.00)", file: "data/cocktail-analcolici.json" },
     { title: "☕ Caffetteria", file: "data/caffetteria.json" }
   ];
