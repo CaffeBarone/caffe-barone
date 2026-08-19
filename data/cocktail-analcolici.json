@@ -1,0 +1,50 @@
+[
+  {
+    "id": "passion-spritz-00",
+    "nome": "Passion Spritz 00",
+    "prezzo": "5,00 €",
+    "miniDescrizione": "Passion fruit, lime e soda.",
+    "descrizioneCompleta": "Versione analcolica e tropicale dello spritz a base di frutto della passione, lime e soda.",
+    "immagine": "images/cocktail/passion-spritz-00.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "vegetarian": true
+  },
+  {
+    "id": "gin-tonic-00",
+    "nome": "Gin & Tonic 00",
+    "prezzo": "5,00 €",
+    "miniDescrizione": "Gin 0.0% e acqua tonica.",
+    "descrizioneCompleta": "Tutto il gusto aromatico del classico gin tonic, realizzato con uno distillato analcolico e acqua tonica.",
+    "immagine": "images/cocktail/gin-tonic-00.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "vegetarian": true
+  },
+  {
+    "id": "mojito-00",
+    "nome": "Mojito 00",
+    "prezzo": "5,00 €",
+    "miniDescrizione": "Lime, zucchero, menta e soda.",
+    "descrizioneCompleta": "Versione analcolica, fresca e dissetante con succo di lime, zucchero di canna, menta fresca e soda.",
+    "immagine": "images/cocktail/mojito-00.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "vegetarian": true
+  },
+  {
+    "id": "caribe-sunset",
+    "nome": "Caribe Sunset",
+    "prezzo": "5,00 €",
+    "miniDescrizione": "Ananas, cocco, mirtillo, lime e passion fruit.",
+    "descrizioneCompleta": "Mocktail fruttato e colorato con succo d'ananas, cocco, mirtillo, lime e passion fruit.",
+    "immagine": "images/cocktail/caribe-sunset.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "vegetarian": true
+  }
+]
