@@ -9,7 +9,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "hugo-spritz",
@@ -21,7 +22,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "campari-spritz",
@@ -33,7 +35,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "negroni",
@@ -45,7 +48,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "americano",
@@ -57,7 +61,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "cosmopolitan",
@@ -69,7 +74,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "mojito",
@@ -81,7 +87,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "pornostar-martini",
@@ -93,7 +100,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "gin-tonic",
@@ -105,7 +113,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "margarita",
@@ -117,7 +126,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "long-island-iced-tea",
@@ -129,7 +139,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "whisky-sour",
@@ -141,7 +152,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": false,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "old-fashioned",
@@ -153,7 +165,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "paloma",
@@ -165,7 +178,8 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   },
   {
     "id": "moscow-mule",
@@ -177,6 +191,7 @@
     "glutenFree": true,
     "lactoseFree": true,
     "vegan": true,
-    "vegetarian": true
+    "vegetarian": true,
+    "alcoholic": true
   }
 ]
