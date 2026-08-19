@@ -250,6 +250,7 @@ function renderCategorySection(container, title, products) {
     if (prod.lactoseFree) card.dataset.lactoseFree = "true";
     if (prod.vegan) card.dataset.vegan = "true";
     if (prod.vegetarian) card.dataset.vegetarian = "true";
+    if (prod.alcoholic !== undefined) card.dataset.alcoholic = prod.alcoholic ? "true" : "false";
 
     card.innerHTML = `
       <div class="product-img-wrapper">
@@ -303,6 +304,11 @@ function toggleExpansion(grid, selectedCard, product) {
     }
     if (product.vegetarian) {
       badgesHTML += `<span class="badge badge-vegetarian">🥗 Vegetariano</span> `;
+    }
+    if (product.alcoholic === true) {
+      badgesHTML += `<span class="badge badge-alcoholic">🍸 Alcolico</span> `;
+    } else if (product.alcoholic === false) {
+      badgesHTML += `<span class="badge badge-non-alcoholic">🥤 Analcolico</span> `;
     }
 
     panel.innerHTML = `
@@ -361,7 +367,7 @@ function loadDetailProduct() {
 }
 
 /* ==========================================
-   7. FILTRO DI RICERCA E REGOLE ALIMENTARI
+   7. FILTRO DI RICERCA E REGOLE ALIMENTARI / ALCOL
    ========================================== */
 function initSearchAndFilters() {
   const searchInput = document.getElementById("search-input");
@@ -390,6 +396,10 @@ function initSearchAndFilters() {
           matchesDiet = card.dataset.vegan === "true";
         } else if (activeFilter === "vegetarian") {
           matchesDiet = card.dataset.vegetarian === "true";
+        } else if (activeFilter === "alcoholic") {
+          matchesDiet = card.dataset.alcoholic === "true";
+        } else if (activeFilter === "non-alcoholic") {
+          matchesDiet = card.dataset.alcoholic === "false";
         }
 
         if (matchesSearch && matchesDiet) {
