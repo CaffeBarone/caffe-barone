@@ -111,7 +111,7 @@
     "id": "il-pollo",
     "nome": "Panino Il Pollo",
     "prezzo": "€ 5.00",
-    "miniDescrizione": "Cotoletta, salsa Caesarror, pomodoro, insalata.",
+    "miniDescrizione": "Cotoletta, salsa Caesar, pomodoro, insalata.",
     "descrizioneCompleta": "Panino ricco con croccante cotoletta di pollo, pomodoro fresco a fette, insalata e speciale salsa Caesarror.",
     "immagine": "images/salato/pollo.jpg",
     "glutenFree": false,
