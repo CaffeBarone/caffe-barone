@@ -168,6 +168,30 @@
     "vegetarian": true
   },
   {
+    "id": "estathe-limone",
+    "nome": "EstaThé al Limone 40cl",
+    "prezzo": "2,50 €",
+    "miniDescrizione": "L'originale thè al limone fresco e dissetante.",
+    "descrizioneCompleta": "L'inconfondibile EstaThé al limone preparato con vero infuso di foglie di thè e succo di limone.",
+    "immagine": "images/bibite/estathe-limone.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "vegetarian": true
+  },
+  {
+    "id": "estathe-pesca",
+    "nome": "EstaThé alla Pesca 40cl",
+    "prezzo": "2,50 €",
+    "miniDescrizione": "L'originale thè alla pesca fresco e dolcemente fruttato.",
+    "descrizioneCompleta": "L'inconfondibile EstaThé alla pesca preparato con vero infuso di foglie di thè e succo di pesca.",
+    "immagine": "images/bibite/estathe-pesca.jpg",
+    "glutenFree": true,
+    "lactoseFree": true,
+    "vegan": true,
+    "vegetarian": true
+  },
+  {
     "id": "estathe-deteinato-pesca",
     "nome": "EstaThé Deteinato alla Pesca",
     "prezzo": "2,50 €",
