@@ -3,63 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pannello Staff - Carta Fedeltà</title>
-  <script src="https://unpkg.com/html5-qrcode"></script>
+  <title>La Mia Carta Fedeltà - Caffè Barone</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: #f4f6f8; color: #333; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-    .card { background: #ffffff; width: 100%; max-width: 420px; padding: 24px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; }
-    h2 { font-size: 1.4rem; color: #1a1a1a; margin-bottom: 8px; }
-    p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+    body { background-color: #0f172a; color: #fff; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+    
+    .container { width: 100%; max-width: 360px; }
+    
+    .login-box {
+      background: #1e293b;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .login-box h2 { margin-bottom: 8px; color: #f8fafc; }
+    .login-box p { font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px; }
     .form-group { text-align: left; margin-bottom: 15px; }
-    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: #444; }
-    .form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; font-size: 1rem; outline: none; }
-    .form-group input:focus { border-color: #007bff; }
-    .btn { width: 100%; padding: 14px; background-color: #007bff; color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer; }
-    #scanner-section { display: none; }
-    .operator-badge { background: #e3f2fd; color: #0d47a1; padding: 8px 12px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; display: inline-block; margin-bottom: 15px; }
-    #reader { width: 100%; border-radius: 12px; overflow: hidden; margin-bottom: 15px; }
-    .btn-logout { background-color: #dc3545; margin-top: 10px; }
-    #msg { margin-top: 10px; font-weight: bold; }
+    .form-group label { display: block; font-size: 0.8rem; margin-bottom: 6px; color: #cbd5e1; }
+    .form-group input { width: 100%; padding: 12px; border: 1px solid #334155; background: #0f172a; color: #fff; border-radius: 8px; font-size: 1rem; outline: none; }
+    .btn-login { width: 100%; padding: 12px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer; }
+    #login-msg { margin-top: 10px; font-size: 0.85rem; }
+
+    #card-section { display: none; }
+    
+    .loyalty-card {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      position: relative;
+      margin-bottom: 25px;
+    }
+    
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .card-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 1px; color: #f8fafc; }
+    .card-number { font-family: monospace; font-size: 0.9rem; color: #38bdf8; background: rgba(56, 189, 248, 0.1); padding: 4px 8px; border-radius: 6px; }
+    
+    .card-holder { font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .stamps-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .stamp {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px dashed rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    .stamp.active {
+      background: #38bdf8;
+      border-style: solid;
+      border-color: #38bdf8;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+    }
+
+    .qr-container {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      color: #0f172a;
+    }
+    #qrcode { display: flex; justify-content: center; margin: 10px 0 15px; }
+    .qr-hint { font-size: 0.85rem; color: #64748b; font-weight: 500; }
+    .btn-logout { background: transparent; border: none; color: #ef4444; margin-top: 15px; font-size: 0.85rem; cursor: pointer; text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <!-- FORM LOGIN STAFF -->
-    <div id="login-section">
-      <h2>Accesso Staff</h2>
-      <p>Inserisci i tuoi dati per accreditare i punti</p>
+  <div class="container">
+    
+    <!-- LOGIN CLIENTE -->
+    <div class="login-box" id="login-section">
+      <h2>Caffè Barone</h2>
+      <p>Accedi alla tua Carta Fedeltà</p>
       
-      <form id="login-form" onsubmit="event.preventDefault(); window.loginStaff();">
+      <form onsubmit="event.preventDefault(); window.loginCliente();">
         <div class="form-group">
-          <label for="staff-id">ID Staff</label>
-          <input type="text" id="staff-id" placeholder="Es. STF-01" required>
+          <label for="cliente-email">Email</label>
+          <input type="email" id="cliente-email" placeholder="latua@email.it" required>
         </div>
         <div class="form-group">
-          <label for="staff-password">Password</label>
-          <input type="password" id="staff-password" placeholder="••••••••" required>
+          <label for="cliente-pass">Password</label>
+          <input type="password" id="cliente-pass" placeholder="••••••••" required>
         </div>
-        <button type="submit" class="btn">Accedi</button>
+        <button type="submit" class="btn-login">Accedi</button>
       </form>
-      <div id="msg"></div>
+      <div id="login-msg"></div>
     </div>
 
-    <!-- PANNELLO SCANSIONE QR -->
-    <div id="scanner-section">
-      <div class="operator-badge">Operatore: <span id="operator-name">---</span></div>
-      <h2>Inquadra Carta Cliente</h2>
-      <p>Posiziona il QR Code del cliente al centro del riquadro</p>
+    <!-- TESSERA DIGITALE -->
+    <div id="card-section">
+      <div class="loyalty-card">
+        <div class="card-header">
+          <span class="card-title">CARTA DRINK</span>
+          <span class="card-number" id="card-id">#0000</span>
+        </div>
+        
+        <div class="card-holder" id="customer-name">---</div>
 
-      <div id="reader"></div>
+        <div class="stamps-grid" id="stamps-container"></div>
+      </div>
 
-      <button class="btn btn-logout" onclick="window.logout()">Esci / Cambia Operatore</button>
+      <div class="qr-container">
+        <div id="qrcode"></div>
+        <p class="qr-hint">Mostra questo codice al banco per accreditare il tuo drink</p>
+      </div>
+
+      <div style="text-align: center;">
+        <button class="btn-logout" onclick="window.logoutCliente()">Esci / Cambia Account</button>
+      </div>
     </div>
+
   </div>
 
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-    import { getFirestore, collection, query, where, getDocs, doc, updateDoc, increment, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+    import { getFirestore, doc, onSnapshot, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyCDe77e8Nl-p1s_68Q4jrfXdzyrPNHFBfU",
@@ -73,103 +141,99 @@
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-    let html5QrcodeScanner = null;
-    let currentStaff = null;
+    let unsubscribe = null;
 
-    // Autenticazione Dipendente
-    window.loginStaff = async () => {
-      const idInput = document.getElementById('staff-id').value.trim();
-      const passInput = document.getElementById('staff-password').value.trim();
-      const msg = document.getElementById('msg');
+    // LOGIN CLIENTE
+    window.loginCliente = async () => {
+      const emailInput = document.getElementById("cliente-email").value.trim();
+      const passInput = document.getElementById("cliente-pass").value;
+      const msg = document.getElementById("login-msg");
+      
+      msg.style.color = "#38bdf8";
       msg.innerText = "Verifica in corso...";
 
-      const q = query(collection(db, "staff"), where("idStaff", "==", idInput));
-      const querySnapshot = await getDocs(q);
+      const q = query(collection(db, "carte"), where("email", "==", emailInput));
+      const snapshot = await getDocs(q);
 
-      if (querySnapshot.empty) {
-        msg.style.color = "red";
-        msg.innerText = "ID Staff non trovato!";
+      if (snapshot.empty) {
+        msg.style.color = "#ef4444";
+        msg.innerText = "Email non trovata nel sistema!";
         return;
       }
 
-      let userFound = null;
-      querySnapshot.forEach((doc) => { userFound = doc.data(); });
+      let clienteData = null;
+      let cardIdTrovato = null;
 
-      if (userFound.password !== passInput) {
-        msg.style.color = "red";
+      snapshot.forEach(d => {
+        clienteData = d.data();
+        cardIdTrovato = d.id;
+      });
+
+      if (clienteData.password !== passInput) {
+        msg.style.color = "#ef4444";
         msg.innerText = "Password errata!";
         return;
       }
 
-      if (userFound.stato === "bloccato") {
-        msg.style.color = "red";
-        msg.innerText = "Utenza bloccata dall'Amministratore!";
-        return;
-      }
-
-      currentStaff = userFound;
-      document.getElementById('operator-name').innerText = `${currentStaff.nome} (${currentStaff.idStaff})`;
-      document.getElementById('login-section').style.display = 'none';
-      document.getElementById('scanner-section').style.display = 'block';
-      msg.innerText = "";
-
-      avviaScanner();
+      // Salva sessione e carica la carta
+      localStorage.setItem("cliente_card_id", cardIdTrovato);
+      mostraCarta(cardIdTrovato);
     };
 
-    // Avvio Fotocamera
-    function avviaScanner() {
-      html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
-      html5QrcodeScanner.render(onScanSuccess);
-    }
+    function mostraCarta(cardId) {
+      document.getElementById("login-section").style.display = "none";
+      document.getElementById("card-section").style.display = "block";
+      document.getElementById("qrcode").innerHTML = "";
 
-    // Gestione Scansione QR Code Cliente
-    async function onScanSuccess(decodedText) {
-      html5QrcodeScanner.pause();
-      
-      try {
-        const qCard = query(collection(db, "carte"), where("numeroCarta", "==", decodedText));
-        const snap = await getDocs(qCard);
+      new QRCode(document.getElementById("qrcode"), {
+        text: cardId,
+        width: 150,
+        height: 150
+      });
 
-        if (snap.empty) {
-          alert("Carta non trovata nel database!");
-        } else {
-          let cardRef = null;
-          let clienteNome = "";
+      const cardRef = doc(db, "carte", cardId);
+      unsubscribe = onSnapshot(cardRef, (snapshot) => {
+        const data = snapshot.data();
+        if (!data) return;
 
-          snap.forEach((d) => {
-            cardRef = doc(db, "carte", d.id);
-            clienteNome = `${d.data().nome} ${d.data().cognome}`;
-          });
+        document.getElementById("card-id").innerText = `#${data.numeroCarta}`;
+        document.getElementById("customer-name").innerText = `${data.nome} ${data.cognome}`;
 
-          // Aggiunge 1 punto alla tessera
-          await updateDoc(cardRef, { punti: increment(1) });
+        const grid = document.getElementById("stamps-container");
+        grid.innerHTML = "";
 
-          // Registra la transazione nello storico
-          await addDoc(collection(db, "transazioni"), {
-            dataOra: new Date().toLocaleString("it-IT"),
-            numeroCarta: decodedText,
-            cliente: clienteNome,
-            idStaff: currentStaff.idStaff,
-            dipendente: `${currentStaff.nome} ${currentStaff.cognome}`,
-            operazione: "+1 Punto"
-          });
+        const puntiAttuali = (data.punti || 0) % 10;
 
-          alert(`Punto aggiunto a ${clienteNome}!`);
+        for (let i = 1; i <= 10; i++) {
+          const stamp = document.createElement("div");
+          stamp.className = "stamp";
+
+          if (i <= puntiAttuali) {
+            stamp.classList.add("active");
+            stamp.innerText = "🍹";
+          } else if (i === 10) {
+            stamp.innerText = "🎁";
+          }
+
+          grid.appendChild(stamp);
         }
-      } catch (err) {
-        alert("Errore durante l'accredito del punto.");
-      }
-
-      setTimeout(() => { html5QrcodeScanner.resume(); }, 2000);
+      });
     }
 
-    // Logout
-    window.logout = () => {
-      if (html5QrcodeScanner) html5QrcodeScanner.clear();
-      document.getElementById('login-section').style.display = 'block';
-      document.getElementById('scanner-section').style.display = 'none';
-      document.getElementById('login-form').reset();
+    window.logoutCliente = () => {
+      localStorage.removeItem("cliente_card_id");
+      if (unsubscribe) unsubscribe();
+      document.getElementById("login-section").style.display = "block";
+      document.getElementById("card-section").style.display = "none";
+      document.getElementById("cliente-email").value = "";
+      document.getElementById("cliente-pass").value = "";
+      document.getElementById("login-msg").innerText = "";
     };
+
+    const savedCardId = localStorage.getItem("cliente_card_id");
+    if (savedCardId) {
+      mostraCarta(savedCardId);
+    }
   </script>
 </body>
 </html>
