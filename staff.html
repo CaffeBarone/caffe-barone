@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pannello Staff - Carta Fedeltà</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #f4f6f8; color: #333; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .card { background: #ffffff; width: 100%; max-width: 420px; padding: 24px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; }
+    h2 { font-size: 1.4rem; color: #1a1a1a; margin-bottom: 8px; }
+    p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+    
+    /* FORM LOGIN */
+    .form-group { text-align: left; margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: #444; }
+    .form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; font-size: 1rem; outline: none; }
+    .form-group input:focus { border-color: #007bff; }
+    
+    .btn { width: 100%; padding: 14px; background-color: #007bff; color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+    .btn:active { opacity: 0.9; }
+    
+    /* SEZIONE SCANNER (NATIVE/CAMERA) */
+    #scanner-section { display: none; }
+    .operator-badge { background: #e3f2fd; color: #0d47a1; padding: 8px 12px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; display: inline-block; margin-bottom: 15px; }
+    .qr-box { width: 100%; height: 260px; background: #111; border-radius: 12px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 0.9rem; position: relative; overflow: hidden; }
+    .btn-logout { background-color: #dc3545; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- 1. FORM DI LOGIN STAFF -->
+    <div id="login-section">
+      <h2>Accesso Staff</h2>
+      <p>Inserisci i tuoi dati per accreditare i punti</p>
+      
+      <form id="login-form" onsubmit="event.preventDefault(); showScanner();">
+        <div class="form-group">
+          <label for="staff-id">ID Staff</label>
+          <input type="text" id="staff-id" placeholder="Es. STF-01" required>
+        </div>
+        <div class="form-group">
+          <label for="staff-password">Password</label>
+          <input type="password" id="staff-password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn">Accedi</button>
+      </form>
+    </div>
+
+    <!-- 2. PANNELLO SCANSIONE QR CODE -->
+    <div id="scanner-section">
+      <div class="operator-badge">Operatore: <span id="operator-name">STF-01</span></div>
+      <h2>Inquadra Carta Cliente</h2>
+      <p>Posiziona il QR Code del cliente al centro della fotocamera</p>
+
+      <div class="qr-box">
+        <!-- Area per la fotocamera dello smartphone -->
+        <span>Fotocamera attiva...</span>
+      </div>
+
+      <button class="btn btn-logout" onclick="showLogin()">Esci / Cambia Operatore</button>
+    </div>
+  </div>
+
+  <script>
+    function showScanner() {
+      const id = document.getElementById('staff-id').value;
+      document.getElementById('operator-name').innerText = id;
+      document.getElementById('login-section').style.display = 'none';
+      document.getElementById('scanner-section').style.display = 'block';
+    }
+
+    function showLogin() {
+      document.getElementById('login-section').style.display = 'block';
+      document.getElementById('scanner-section').style.display = 'none';
+      document.getElementById('login-form').reset();
+    }
+  </script>
+
+</body>
+</html>

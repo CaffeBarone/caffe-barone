@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pannello Amministratore - Carta Fedeltà</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f6f8; margin: 0; padding: 20px; color: #333; }
+    h1 { margin-bottom: 20px; }
+    .section { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .table-container { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; text-align: left; min-width: 600px; }
+    th, td { padding: 12px; border-bottom: 1px solid #ddd; }
+    th { background: #007bff; color: white; }
+    .btn { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    .btn-block { background: #ffc107; color: #000; }
+    .btn-delete { background: #dc3545; color: #fff; }
+    .btn-add { background: #28a745; color: #fff; margin-bottom: 15px; }
+    .status-active { color: green; font-weight: bold; }
+    .status-blocked { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>Pannello Amministratore</h1>
+
+  <!-- SEZIONE GESTIONE STAFF -->
+  <div class="section">
+    <h2>Gestione Dipendenti (Staff)</h2>
+    <button class="btn btn-add">+ Aggiungi Nuovo Dipendente</button>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID Staff</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Password</th>
+            <th>Stato</th>
+            <th>Azioni</th>
+          </tr>
+        </thead>
+        <tbody id="staff-table-body">
+          <tr>
+            <td>STF-01</td>
+            <td>Marco</td>
+            <td>Rossi</td>
+            <td>••••••••</td>
+            <td><span class="status-active">Attivo</span></td>
+            <td>
+              <button class="btn btn-block">Blocca</button>
+              <button class="btn btn-delete">Elimina</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEZIONE CARTE FEDELTÀ -->
+  <div class="section">
+    <h2>Database Carte Fedeltà (Clienti)</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>N. Carta</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Email</th>
+            <th>Punti Attuali</th>
+            <th>Data Creazione</th>
+          </tr>
+        </thead>
+        <tbody id="carte-table-body">
+          <tr>
+            <td>#0001</td>
+            <td>Giuseppe</td>
+            <td>Verdi</td>
+            <td>giuseppe@email.com</td>
+            <td>4 / 10</td>
+            <td>27/08/2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEZIONE STORICO TRANSAZIONI -->
+  <div class="section">
+    <h2>Registro Transazioni</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Data e Ora</th>
+            <th>N. Carta</th>
+            <th>Cliente</th>
+            <th>ID Staff</th>
+            <th>Dipendente</th>
+            <th>Operazione</th>
+          </tr>
+        </thead>
+        <tbody id="storico-table-body">
+          <tr>
+            <td>27/08/2026 18:45</td>
+            <td>#0001</td>
+            <td>Giuseppe Verdi</td>
+            <td>STF-01</td>
+            <td>Marco Rossi</td>
+            <td>+1 Punto</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
