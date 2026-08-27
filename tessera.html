@@ -3,14 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Mia Carta Fedeltà</title>
+  <title>La Mia Carta Fedeltà - Caffè Barone</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
     body { background-color: #0f172a; color: #fff; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
     
-    .card-container { width: 100%; max-width: 360px; }
+    .container { width: 100%; max-width: 360px; }
     
-    /* STILE CARTA FIDEALIZZAZIONE (CARTA DI CREDITO) */
+    .login-box {
+      background: #1e293b;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .login-box h2 { margin-bottom: 8px; color: #f8fafc; }
+    .login-box p { font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px; }
+    .form-group { text-align: left; margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 0.8rem; margin-bottom: 6px; color: #cbd5e1; }
+    .form-group input { width: 100%; padding: 12px; border: 1px solid #334155; background: #0f172a; color: #fff; border-radius: 8px; font-size: 1rem; outline: none; }
+    .btn-login { width: 100%; padding: 12px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer; }
+    #login-msg { margin-top: 10px; font-size: 0.85rem; }
+
+    #card-section { display: none; }
+    
     .loyalty-card {
       background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -27,7 +45,6 @@
     
     .card-holder { font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
     
-    /* GRIGLIA PUNTI (10 CASELLE) */
     .stamps-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
     .stamp {
       width: 100%;
@@ -48,7 +65,6 @@
       box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
     }
 
-    /* SEZIONE QR CODE */
     .qr-container {
       background: #ffffff;
       padding: 20px;
@@ -56,46 +72,168 @@
       text-align: center;
       color: #0f172a;
     }
-    .qr-box { width: 160px; height: 160px; margin: 0 auto 12px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 0.8rem; color: #64748b; }
+    #qrcode { display: flex; justify-content: center; margin: 10px 0 15px; }
     .qr-hint { font-size: 0.85rem; color: #64748b; font-weight: 500; }
+    .btn-logout { background: transparent; border: none; color: #ef4444; margin-top: 15px; font-size: 0.85rem; cursor: pointer; text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <div class="card-container">
-    <!-- CARTA STILE CARTA DI CREDITO -->
-    <div class="loyalty-card">
-      <div class="card-header">
-        <span class="card-title">CARTA DRINK</span>
-        <span class="card-number" id="card-id">#0001</span>
-      </div>
+  <div class="container">
+    
+    <!-- LOGIN CLIENTE -->
+    <div class="login-box" id="login-section">
+      <h2>Caffè Barone</h2>
+      <p>Accedi alla tua Carta Fedeltà</p>
       
-      <div class="card-holder" id="customer-name">Mario Rossi</div>
+      <form onsubmit="event.preventDefault(); window.loginCliente();">
+        <div class="form-group">
+          <label for="cliente-email">Email</label>
+          <input type="email" id="cliente-email" placeholder="latua@email.it" required>
+        </div>
+        <div class="form-group">
+          <label for="cliente-pass">Password</label>
+          <input type="password" id="cliente-pass" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-login">Accedi</button>
+      </form>
+      <div id="login-msg"></div>
+    </div>
 
-      <!-- 10 PUNTI -->
-      <div class="stamps-grid">
-        <div class="stamp active">🍹</div>
-        <div class="stamp active">🍹</div>
-        <div class="stamp active">🍹</div>
-        <div class="stamp active">🍹</div>
-        <div class="stamp"></div>
-        <div class="stamp"></div>
-        <div class="stamp"></div>
-        <div class="stamp"></div>
-        <div class="stamp"></div>
-        <div class="stamp">🎁</div>
+    <!-- TESSERA DIGITALE -->
+    <div id="card-section">
+      <div class="loyalty-card">
+        <div class="card-header">
+          <span class="card-title">CARTA DRINK</span>
+          <span class="card-number" id="card-id">#0000</span>
+        </div>
+        
+        <div class="card-holder" id="customer-name">---</div>
+
+        <div class="stamps-grid" id="stamps-container"></div>
+      </div>
+
+      <div class="qr-container">
+        <div id="qrcode"></div>
+        <p class="qr-hint">Mostra questo codice al banco per accreditare il tuo drink</p>
+      </div>
+
+      <div style="text-align: center;">
+        <button class="btn-logout" onclick="window.logoutCliente()">Esci / Cambia Account</button>
       </div>
     </div>
 
-    <!-- MOSTRA QUESTO QR ALLA CASSA -->
-    <div class="qr-container">
-      <div class="qr-box">
-        <!-- Inserisci qui il QR Code generato -->
-        <span>[ QR CODE CLIENTE ]</span>
-      </div>
-      <p class="qr-hint">Mostra questo codice al banco per accreditare il tuo drink</p>
-    </div>
   </div>
 
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, doc, onSnapshot, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCDe77e8Nl-p1s_68Q4jrfXdzyrPNHFBfU",
+      authDomain: "carta-fedelta-web-caffe-barone.firebaseapp.com",
+      projectId: "carta-fedelta-web-caffe-barone",
+      storageBucket: "carta-fedelta-web-caffe-barone.firebasestorage.app",
+      messagingSenderId: "498122092049",
+      appId: "1:498122092049:web:6c28e9ee319f8977968bb0",
+      measurementId: "G-PHXWZ9M4LX"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    let unsubscribe = null;
+
+    // LOGIN CLIENTE
+    window.loginCliente = async () => {
+      const emailInput = document.getElementById("cliente-email").value.trim();
+      const passInput = document.getElementById("cliente-pass").value;
+      const msg = document.getElementById("login-msg");
+      
+      msg.style.color = "#38bdf8";
+      msg.innerText = "Verifica in corso...";
+
+      const q = query(collection(db, "carte"), where("email", "==", emailInput));
+      const snapshot = await getDocs(q);
+
+      if (snapshot.empty) {
+        msg.style.color = "#ef4444";
+        msg.innerText = "Email non trovata nel sistema!";
+        return;
+      }
+
+      let clienteData = null;
+      let cardIdTrovato = null;
+
+      snapshot.forEach(d => {
+        clienteData = d.data();
+        cardIdTrovato = d.id;
+      });
+
+      if (clienteData.password !== passInput) {
+        msg.style.color = "#ef4444";
+        msg.innerText = "Password errata!";
+        return;
+      }
+
+      // Salva sessione e carica la carta
+      localStorage.setItem("cliente_card_id", cardIdTrovato);
+      mostraCarta(cardIdTrovato);
+    };
+
+    function mostraCarta(cardId) {
+      document.getElementById("login-section").style.display = "none";
+      document.getElementById("card-section").style.display = "block";
+      document.getElementById("qrcode").innerHTML = "";
+
+      new QRCode(document.getElementById("qrcode"), {
+        text: cardId,
+        width: 150,
+        height: 150
+      });
+
+      const cardRef = doc(db, "carte", cardId);
+      unsubscribe = onSnapshot(cardRef, (snapshot) => {
+        const data = snapshot.data();
+        if (!data) return;
+
+        document.getElementById("card-id").innerText = `#${data.numeroCarta}`;
+        document.getElementById("customer-name").innerText = `${data.nome} ${data.cognome}`;
+
+        const grid = document.getElementById("stamps-container");
+        grid.innerHTML = "";
+
+        const puntiAttuali = (data.punti || 0) % 10;
+
+        for (let i = 1; i <= 10; i++) {
+          const stamp = document.createElement("div");
+          stamp.className = "stamp";
+
+          if (i <= puntiAttuali) {
+            stamp.classList.add("active");
+            stamp.innerText = "🍹";
+          } else if (i === 10) {
+            stamp.innerText = "🎁";
+          }
+
+          grid.appendChild(stamp);
+        }
+      });
+    }
+
+    window.logoutCliente = () => {
+      localStorage.removeItem("cliente_card_id");
+      if (unsubscribe) unsubscribe();
+      document.getElementById("login-section").style.display = "block";
+      document.getElementById("card-section").style.display = "none";
+      document.getElementById("cliente-email").value = "";
+      document.getElementById("cliente-pass").value = "";
+      document.getElementById("login-msg").innerText = "";
+    };
+
+    const savedCardId = localStorage.getItem("cliente_card_id");
+    if (savedCardId) {
+      mostraCarta(savedCardId);
+    }
+  </script>
 </body>
 </html>
