@@ -9,111 +9,382 @@
     h1 { margin-bottom: 20px; }
     .section { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
     .table-container { overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; text-align: left; min-width: 600px; }
+    table { width: 100%; border-collapse: collapse; text-align: left; min-width: 800px; }
     th, td { padding: 12px; border-bottom: 1px solid #ddd; }
     th { background: #007bff; color: white; }
     .btn { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
     .btn-block { background: #ffc107; color: #000; }
-    .btn-delete { background: #dc3545; color: #fff; }
+    .btn-unblock { background: #17a2b8; color: #fff; }
+    .btn-delete { background: #dc3545; color: #fff; margin-left: 5px; }
     .btn-add { background: #28a745; color: #fff; margin-bottom: 15px; }
+    .btn-pts-add { background: #28a745; color: #fff; padding: 4px 8px; font-size: 0.85rem; margin-left: 4px; }
+    .btn-pts-sub { background: #fd7e14; color: #fff; padding: 4px 8px; font-size: 0.85rem; margin-left: 6px; }
+    .btn-toggle-pass { background: #6c757d; color: #fff; font-size: 0.75rem; padding: 4px 8px; margin-left: 8px; border-radius: 4px; cursor: pointer; border: none; }
     .status-active { color: green; font-weight: bold; }
     .status-blocked { color: red; font-weight: bold; }
+    .form-inline { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
+    .form-inline input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    
+    /* STILI LOGIN ADMIN */
+    #login-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: #0f172a; display: flex; align-items: center; justify-content: center;
+      z-index: 9999;
+    }
+    .admin-login-box {
+      background: #1e293b; color: #fff; padding: 30px; border-radius: 12px;
+      width: 100%; max-width: 350px; text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    .admin-login-box h2 { margin-bottom: 15px; color: #f8fafc; }
+    .admin-login-box input {
+      width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px;
+      border: 1px solid #334155; background: #0f172a; color: #fff; box-sizing: border-box;
+    }
+    .admin-login-box button {
+      width: 100%; padding: 12px; background: #007bff; color: #fff;
+      border: none; border-radius: 6px; font-weight: bold; cursor: pointer;
+    }
+    #admin-login-msg { margin-top: 10px; color: #ef4444; font-size: 0.85rem; }
+    
+    /* NASCONDE IL DASHBOARD FINO AL LOGIN */
+    #admin-dashboard { display: none; }
   </style>
 </head>
 <body>
 
-  <h1>Pannello Amministratore</h1>
-
-  <!-- SEZIONE GESTIONE STAFF -->
-  <div class="section">
-    <h2>Gestione Dipendenti (Staff)</h2>
-    <button class="btn btn-add">+ Aggiungi Nuovo Dipendente</button>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>ID Staff</th>
-            <th>Nome</th>
-            <th>Cognome</th>
-            <th>Password</th>
-            <th>Stato</th>
-            <th>Azioni</th>
-          </tr>
-        </thead>
-        <tbody id="staff-table-body">
-          <tr>
-            <td>STF-01</td>
-            <td>Marco</td>
-            <td>Rossi</td>
-            <td>••••••••</td>
-            <td><span class="status-active">Attivo</span></td>
-            <td>
-              <button class="btn btn-block">Blocca</button>
-              <button class="btn btn-delete">Elimina</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- SCHERMATA DI LOGIN MANAGER -->
+  <div id="login-overlay">
+    <div class="admin-login-box">
+      <h2>Area Manager</h2>
+      <form onsubmit="event.preventDefault(); window.loginAdmin();">
+        <input type="email" id="admin-email" placeholder="Email Manager" required>
+        <input type="password" id="admin-pass" placeholder="Password" required>
+        <button type="submit">Accedi al Dashboard</button>
+      </form>
+      <div id="admin-login-msg"></div>
     </div>
   </div>
 
-  <!-- SEZIONE CARTE FEDELTÀ -->
-  <div class="section">
-    <h2>Database Carte Fedeltà (Clienti)</h2>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>N. Carta</th>
-            <th>Nome</th>
-            <th>Cognome</th>
-            <th>Email</th>
-            <th>Punti Attuali</th>
-            <th>Data Creazione</th>
-          </tr>
-        </thead>
-        <tbody id="carte-table-body">
-          <tr>
-            <td>#0001</td>
-            <td>Giuseppe</td>
-            <td>Verdi</td>
-            <td>giuseppe@email.com</td>
-            <td>4 / 10</td>
-            <td>27/08/2026</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- PANNELLO PRINCIPALE (VISIBILE SOLO DOPO LOGIN) -->
+  <div id="admin-dashboard">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <h1>Pannello Amministratore</h1>
+      <button class="btn btn-delete" onclick="window.logoutAdmin()">Disconnetti Manager</button>
+    </div>
+
+    <!-- SEZIONE GESTIONE STAFF -->
+    <div class="section">
+      <h2>Gestione Dipendenti (Staff)</h2>
+      <div class="form-inline">
+        <input type="text" id="new-id" placeholder="ID Staff (es. STF-01)">
+        <input type="text" id="new-nome" placeholder="Nome">
+        <input type="text" id="new-cognome" placeholder="Cognome">
+        <input type="password" id="new-pass" placeholder="Password">
+        <button class="btn btn-add" onclick="aggiungiStaff()">+ Aggiungi Dipendente</button>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID Staff</th>
+              <th>Nome</th>
+              <th>Cognome</th>
+              <th>Password</th>
+              <th>Stato</th>
+              <th>Azioni</th>
+            </tr>
+          </thead>
+          <tbody id="staff-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SEZIONE CARTE FEDELTÀ FISICHE -->
+    <div class="section">
+      <h2>Database e Attivazione Carte Fisiche</h2>
+      
+      <div class="form-inline">
+        <input type="text" id="card-num" placeholder="N. Carta (es. 0002)">
+        <input type="text" id="card-nome" placeholder="Nome Cliente">
+        <input type="text" id="card-cognome" placeholder="Cognome Cliente">
+        <input type="email" id="card-email" placeholder="Email Cliente">
+        <input type="password" id="card-pass" placeholder="Password Cliente">
+        <button class="btn btn-add" onclick="attivaCartaFisica()">+ Associa Nuova Carta</button>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>N. Carta</th>
+              <th>Nome</th>
+              <th>Cognome</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Punti Attuali</th>
+              <th>Data Attivazione</th>
+              <th>Azioni</th>
+            </tr>
+          </thead>
+          <tbody id="carte-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SEZIONE STORICO TRANSAZIONI -->
+    <div class="section">
+      <h2>Registro Transazioni</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Data e Ora</th>
+              <th>N. Carta</th>
+              <th>Cliente</th>
+              <th>ID Staff</th>
+              <th>Dipendente</th>
+              <th>Operazione</th>
+            </tr>
+          </thead>
+          <tbody id="storico-table-body"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
-  <!-- SEZIONE STORICO TRANSAZIONI -->
-  <div class="section">
-    <h2>Registro Transazioni</h2>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Data e Ora</th>
-            <th>N. Carta</th>
-            <th>Cliente</th>
-            <th>ID Staff</th>
-            <th>Dipendente</th>
-            <th>Operazione</th>
-          </tr>
-        </thead>
-        <tbody id="storico-table-body">
-          <tr>
-            <td>27/08/2026 18:45</td>
-            <td>#0001</td>
-            <td>Giuseppe Verdi</td>
-            <td>STF-01</td>
-            <td>Marco Rossi</td>
-            <td>+1 Punto</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, collection, setDoc, doc, updateDoc, deleteDoc, onSnapshot, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
+    const firebaseConfig = {
+      apiKey: "AIzaSyCDe77e8Nl-p1s_68Q4jrfXdzyrPNHFBfU",
+      authDomain: "carta-fedelta-web-caffe-barone.firebaseapp.com",
+      projectId: "carta-fedelta-web-caffe-barone",
+      storageBucket: "carta-fedelta-web-caffe-barone.firebasestorage.app",
+      messagingSenderId: "498122092049",
+      appId: "1:498122092049:web:6c28e9ee319f8977968bb0",
+      measurementId: "G-PHXWZ9M4LX"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // CREDENZIALI DI ACCESSO MANAGER
+    const ADMIN_EMAIL = "admin@caffebarone.it";
+    const ADMIN_PASS = "MarcoBarone115";
+
+    // LOGIN MANAGER
+    window.loginAdmin = () => {
+      const email = document.getElementById("admin-email").value.trim();
+      const pass = document.getElementById("admin-pass").value;
+      const msg = document.getElementById("admin-login-msg");
+
+      if (email === ADMIN_EMAIL && pass === ADMIN_PASS) {
+        sessionStorage.setItem("admin_logged", "true");
+        sbloccaDashboard();
+      } else {
+        msg.innerText = "Email o Password Manager errate!";
+      }
+    };
+
+    // LOGOUT MANAGER
+    window.logoutAdmin = () => {
+      sessionStorage.removeItem("admin_logged");
+      location.reload();
+    };
+
+    function sbloccaDashboard() {
+      document.getElementById("login-overlay").style.display = "none";
+      document.getElementById("admin-dashboard").style.display = "block";
+      avviaAscoltoFirestore();
+    }
+
+    // VERIFICA SE GIÀ AUTENTICATO
+    if (sessionStorage.getItem("admin_logged") === "true") {
+      sbloccaDashboard();
+    }
+
+    function avviaAscoltoFirestore() {
+      // 1. ASCOLTA STAFF
+      onSnapshot(collection(db, "staff"), (snapshot) => {
+        const tbody = document.getElementById("staff-table-body");
+        tbody.innerHTML = "";
+        snapshot.forEach((docSnap) => {
+          const data = docSnap.data();
+          const id = docSnap.id;
+          const isBlocked = data.stato === "bloccato";
+          
+          tbody.innerHTML += `
+            <tr>
+              <td><b>${data.idStaff}</b></td>
+              <td>${data.nome}</td>
+              <td>${data.cognome}</td>
+              <td>
+                <span id="pass-text-${id}">••••••••</span>
+                <button class="btn-toggle-pass" onclick="togglePassword('${id}', '${data.password}')">Mostra</button>
+              </td>
+              <td><span class="${isBlocked ? 'status-blocked' : 'status-active'}">${data.stato}</span></td>
+              <td>
+                <button class="btn ${isBlocked ? 'btn-unblock' : 'btn-block'}" onclick="toggleBlocco('${id}', '${data.stato}')">
+                  ${isBlocked ? 'Sblocca' : 'Blocca'}
+                </button>
+                <button class="btn btn-delete" onclick="eliminaStaff('${id}')">Elimina</button>
+              </td>
+            </tr>
+          `;
+        });
+      });
+
+      // 2. ASCOLTA CARTE CLIENTE
+      onSnapshot(collection(db, "carte"), (snapshot) => {
+        const tbody = document.getElementById("carte-table-body");
+        tbody.innerHTML = "";
+        snapshot.forEach((docSnap) => {
+          const data = docSnap.data();
+          const cardId = docSnap.id;
+          const punti = data.punti || 0;
+          const nomeCliente = `${data.nome} ${data.cognome}`;
+
+          tbody.innerHTML += `
+            <tr>
+              <td><b>#${data.numeroCarta}</b></td>
+              <td>${data.nome}</td>
+              <td>${data.cognome}</td>
+              <td>${data.email || '-'}</td>
+              <td>
+                <span id="card-pass-${cardId}">••••••••</span>
+                <button class="btn-toggle-pass" onclick="togglePasswordCard('${cardId}', '${data.password || ''}')">Mostra</button>
+              </td>
+              <td>
+                <b>${punti}</b>
+                <button class="btn btn-pts-add" onclick="modificaPunti('${cardId}', ${punti}, 1, '${nomeCliente}')">+1</button>
+                <button class="btn btn-pts-sub" onclick="modificaPunti('${cardId}', ${punti}, -1, '${nomeCliente}')">-1</button>
+              </td>
+              <td>${data.dataCreazione}</td>
+              <td>
+                <button class="btn btn-delete" onclick="eliminaCarta('${cardId}')">Elimina</button>
+              </td>
+            </tr>
+          `;
+        });
+      });
+
+      // 3. ASCOLTA STORICO TRANSAZIONI (Piu recenti in alto con ordinamento temporale)
+      onSnapshot(collection(db, "transazioni"), (snapshot) => {
+        const tbody = document.getElementById("storico-table-body");
+        tbody.innerHTML = "";
+
+        const transazioni = [];
+        snapshot.forEach((docSnap) => {
+          transazioni.push(docSnap.data());
+        });
+
+        // Ordina numericamente le transazioni dal timestamp più recente
+        transazioni.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+
+        transazioni.forEach((data) => {
+          const isAumento = data.operazione.includes("+");
+          const color = isAumento ? "green" : "red";
+
+          tbody.innerHTML += `
+            <tr>
+              <td>${data.dataOra}</td>
+              <td>#${data.numeroCarta}</td>
+              <td>${data.cliente}</td>
+              <td>${data.idStaff}</td>
+              <td>${data.dipendente}</td>
+              <td><b style="color:${color};">${data.operazione}</b></td>
+            </tr>
+          `;
+        });
+      });
+    }
+
+    // ATTIVA CARTA FISICA
+    window.attivaCartaFisica = async () => {
+      const num = document.getElementById("card-num").value.trim();
+      const nome = document.getElementById("card-nome").value.trim();
+      const cognome = document.getElementById("card-cognome").value.trim();
+      const email = document.getElementById("card-email").value.trim();
+      const pass = document.getElementById("card-pass").value.trim();
+
+      if (!num || !nome || !cognome || !email || !pass) return alert("Compila tutti i campi!");
+
+      await setDoc(doc(db, "carte", num), {
+        numeroCarta: num,
+        nome: nome,
+        cognome: cognome,
+        email: email,
+        password: pass,
+        punti: 0,
+        dataCreazione: new Date().toLocaleDateString("it-IT")
+      });
+
+      alert(`Carta #${num} attivata per ${nome} ${cognome}!`);
+      document.getElementById("card-num").value = "";
+      document.getElementById("card-nome").value = "";
+      document.getElementById("card-cognome").value = "";
+      document.getElementById("card-email").value = "";
+      document.getElementById("card-pass").value = "";
+    };
+
+    // MODIFICA PUNTI
+    window.modificaPunti = async (cardId, puntiAttuali, variazione, nomeCliente) => {
+      const nuoviPunti = puntiAttuali + variazione;
+      if (nuoviPunti < 0) return alert("I punti non possono andare sotto lo zero!");
+
+      await updateDoc(doc(db, "carte", cardId), { punti: nuoviPunti });
+
+      const operazioneTesto = variazione > 0 ? `Aggiunto +${variazione} punto (Admin)` : `Sottratto ${variazione} punto (Admin)`;
+      await addDoc(collection(db, "transazioni"), {
+        numeroCarta: cardId,
+        cliente: nomeCliente,
+        idStaff: "ADMIN",
+        dipendente: "Amministratore",
+        operazione: operazioneTesto,
+        dataOra: new Date().toLocaleString("it-IT"),
+        timestamp: Date.now() // Salviamo il timestamp preciso per l'ordinamento
+      });
+    };
+
+    window.eliminaCarta = async (cardId) => {
+      if (confirm(`Sei sicuro di voler eliminare definitivamente la carta #${cardId}?`)) {
+        await deleteDoc(doc(db, "carte", cardId));
+      }
+    };
+
+    window.togglePassword = (id, pass) => {
+      const span = document.getElementById(`pass-text-${id}`);
+      const btn = span.nextElementSibling;
+      if (span.innerText === "••••••••") { span.innerText = pass; btn.innerText = "Nascondi"; }
+      else { span.innerText = "••••••••"; btn.innerText = "Mostra"; }
+    };
+
+    window.togglePasswordCard = (id, pass) => {
+      const span = document.getElementById(`card-pass-${id}`);
+      const btn = span.nextElementSibling;
+      if (span.innerText === "••••••••") { span.innerText = pass || 'Non impostata'; btn.innerText = "Nascondi"; }
+      else { span.innerText = "••••••••"; btn.innerText = "Mostra"; }
+    };
+
+    window.aggiungiStaff = async () => {
+      const idStaff = document.getElementById("new-id").value;
+      const nome = document.getElementById("new-nome").value;
+      const cognome = document.getElementById("new-cognome").value;
+      const password = document.getElementById("new-pass").value;
+      if(!idStaff || !nome || !password) return alert("Compila tutti i campi!");
+      await setDoc(doc(db, "staff", idStaff), { idStaff, nome, cognome, password, stato: "attivo" });
+    };
+
+    window.toggleBlocco = async (docId, statoAttuale) => {
+      await updateDoc(doc(db, "staff", docId), { stato: statoAttuale === "attivo" ? "bloccato" : "attivo" });
+    };
+
+    window.eliminaStaff = async (docId) => {
+      if(confirm("Eliminare dipendente?")) await deleteDoc(doc(db, "staff", docId));
+    };
+  </script>
 </body>
 </html>
