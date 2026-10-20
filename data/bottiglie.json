@@ -1,551 +1,597 @@
 [
-{
-"tipologia": "Gin",
-"prodotti": [
-{
-"id": "gin-hendricks-flora-adora",
-"nome": "Hendrick's Flora Adora",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Hendricks+Flora+Adora",
-"miniDescrizione": "Gin floreale aromatizzato con essenze botaniche dolci e seducenti.",
-"descrizioneCompleta": "Hendrick's Flora Adora si distingue per il suo profilo aromatico ricco di fiori ed erbe botaniche fresche, perfetto per cocktail freschi ed estivi.",
-"alcoholic": true
-},
-{
-"id": "gin-malfy-con-limone",
-"nome": "Malfy Gin Con Limone",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Malfy+Con+Limone",
-"miniDescrizione": "Gin italiano fresco e agrumato ai limoni di Amalfi.",
-"descrizioneCompleta": "Distillato in Italia con limoni della Costiera Amalfitana e ginepro toscano, offre un gusto intensamente agrumato e vivace.",
-"alcoholic": true
-},
-{
-"id": "gin-tenuta-sussambrino-servaj-iris",
-"nome": "Tenuta Sussambrino Servaj Iris",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Servaj+Iris",
-"miniDescrizione": "Gin artigianale con sentori floreali d'iris e botaniche selvatiche.",
-"descrizioneCompleta": "Gin elegante prodotto con cura artigianale, caratterizzato da note delicate di iris e profumi della macchia mediterranea.",
-"alcoholic": true
-},
-{
-"id": "gin-knut-hansen",
-"nome": "Knut Hansen",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Knut+Hansen",
-"miniDescrizione": "Dry gin tedesco fresco con mela, cetriolo e basilico.",
-"descrizioneCompleta": "Distillato nel nord della Germania con 14 botaniche regionali, bilancia perfettamente la freschezza della mela e del cetriolo con il ginepro classico.",
-"alcoholic": true
-},
-{
-"id": "gin-mare",
-"nome": "Gin Mare",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Gin+Mare",
-"miniDescrizione": "Gin mediterraneo con oliva arbequina, timo, rosmarino e basilico.",
-"descrizioneCompleta": "Iconico gin spagnolo distillato in un villaggio di pescatori della Costa Dorada; sentori erbacei mediterranei unici e inconfondibili.",
-"alcoholic": true
-},
-{
-"id": "gin-tanqueray",
-"nome": "Tanqueray",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Tanqueray",
-"miniDescrizione": "London Dry classico, secco e con forte presenza di ginepro.",
-"descrizioneCompleta": "Uno dei gin più celebri al mondo: quattro botaniche tradizionali (ginepro, coriandolo, angelica e liquirizia) per un gusto pulito e lineare.",
-"alcoholic": true
-},
-{
-"id": "gin-columbus-pompelmo-rosa",
-"nome": "Columbus al Pompelmo Rosa",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Columbus+Pompelmo+Rosa",
-"miniDescrizione": "Gin fruttato e dissetante con note naturali di pompelmo rosa.",
-"descrizioneCompleta": "Un gin aromatico e profumato, dominato dalla freschezza agrumata e leggermente amara del pompelmo rosa.",
-"alcoholic": true
-},
-{
-"id": "gin-tenjaku",
-"nome": "Tenjaku Gin",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Tenjaku+Gin",
-"miniDescrizione": "Craft gin giapponese con botaniche nipponiche tradizionali.",
-"descrizioneCompleta": "Distillato in Giappone con yuzu, tè verde, pepe sansho e pesche locali, armonizzato con purissima acqua di sorgente.",
-"alcoholic": true
-},
-{
-"id": "gin-porcelain-mandarin",
-"nome": "Porcelain Mandarin",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Porcelain+Mandarin",
-"miniDescrizione": "Gin artigianale raffinato con note agrumate di mandarino.",
-"descrizioneCompleta": "Distillato prezioso confezionato in porcellana artigianale, esalta le note dolci e zuccherine del mandarino cinese con spezie orientali.",
-"alcoholic": true
-},
-{
-"id": "gin-etsu-double-yuzu",
-"nome": "Etsu Double Yuzu",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Etsu+Double+Yuzu",
-"miniDescrizione": "Gin giapponese con doppia infusione di pregiato agrume Yuzu.",
-"descrizioneCompleta": "Distillato ad Hokkaido secondo ricetta segreta asiatica, presenta una straordinaria intensità agrumata di yuzu e arancia amara.",
-"alcoholic": true
-},
-{
-"id": "gin-generous-organic",
-"nome": "Generous Gin Organic",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Generous+Organic",
-"miniDescrizione": "Gin francese biologico con aromi freschi e spezie fini.",
-"descrizioneCompleta": "Certificato biologico, prodotto nella regione di Cognac, combina freschezza agrumata e spezie sottili in un profilo morbido.",
-"alcoholic": true
-},
-{
-"id": "gin-generous-classic",
-"nome": "Generous Gin",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Generous+Gin",
-"miniDescrizione": "Gin francese morbido con fiori bianchi e agrumi.",
-"descrizioneCompleta": "Distillato elegante come un profumo, con note di gelsomino, bacche di ginepro, mandarino e pepe rosso.",
-"alcoholic": true
-},
-{
-"id": "gin-generous-azur",
-"nome": "Generous Gin Azur",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Generous+Azur",
-"miniDescrizione": "Gin fresco ispirato alla Costa Azzurra con note di basilico e violetta.",
-"descrizioneCompleta": "Ispirato ai profumi e ai cieli della Costa Azzurra, offre sfumature floreali di violetta unite a scorze d'arancia e basilico.",
-"alcoholic": true
-},
-{
-"id": "gin-poli-marconi-42",
-"nome": "Poli Marconi 42",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Poli+Marconi+42",
-"miniDescrizione": "Gin italiano stile mediterraneo con rosmarino, menta e basilico.",
-"descrizioneCompleta": "Distillato artigianalmente da Poli Distillerie in Veneto, si caratterizza per il timbro balsamico di timo, rosmarino e cardamomo.",
-"alcoholic": true
-},
-{
-"id": "gin-bottega-bacur",
-"nome": "Bottega Bacûr",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Bottega+Bacur",
-"miniDescrizione": "Dry gin distillato in rame con ginepro, mirto e salvia.",
-"descrizioneCompleta": "Distillato con acqua delle Alpi, bacche di ginepro toscano, salvia e mirto, custodito nell'inconfondibile bottiglia ramata metallizzata.",
-"alcoholic": true
-},
-{
-"id": "gin-engine",
-"nome": "Engine",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Engine+Gin",
-"miniDescrizione": "Organic gin 100% italiano con salvia di Langa e limone di Sicilia.",
-"descrizioneCompleta": "Nato in Piemonte, è un gin biologico con spiccate note di salvia, limone e radice di liquirizia servito nell'iconico fusto d'olio.",
-"alcoholic": true
-},
-{
-"id": "gin-roku",
-"nome": "Roku Gin",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Roku+Gin",
-"miniDescrizione": "Gin giapponese con 6 botaniche raccolte nelle quattro stagioni.",
-"descrizioneCompleta": "Fiori di sakura, foglie di sakura, tè sencha, tè gyokuro, pepe sansho e buccia di yuzu donano un equilibrio armonico e setoso.",
-"alcoholic": true
-},
-{
-"id": "gin-nordes",
-"nome": "Nordés",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Nordes+Gin",
-"miniDescrizione": "Gin galiziano con base di uva albariño ed erbe atlantiche.",
-"descrizioneCompleta": "Gin spagnolo aromatico con base alcolica di vino Albariño, alloro, salicornia e menta piperita, dal profumo floreale inconfondibile.",
-"alcoholic": true
-},
-{
-"id": "gin-dolce-vita",
-"nome": "Dolce Vita",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Dolce+Vita+Gin",
-"miniDescrizione": "Gin italiano fresco ed aromatico dal gusto morbido.",
-"descrizioneCompleta": "Omaggio allo stile italiano, unisce freschi agrumi del sud Italia e botaniche aromatiche per una beva piacevole e bilanciata.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Whisky & Bourbon",
-"prodotti": [
-{
-"id": "whisky-laphroaig-10",
-"nome": "Laphroaig 10 Years",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Laphroaig+10",
-"miniDescrizione": "Single Malt scozzese di Islay intensamente torbato e iodato.",
-"descrizioneCompleta": "Celebre per il suo gusto deciso, sentori medicinali, fumo di torba, alghe marine e una sorprendente dolcezza sul finale.",
-"alcoholic": true
-},
-{
-"id": "whisky-lagavulin-16",
-"nome": "Lagavulin 16 Years",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Lagavulin+16",
-"miniDescrizione": "Single Malt Islay invecchiato 16 anni, torbato, ricco e complesso.",
-"descrizioneCompleta": "Punto di riferimento tra i whisky torbati di Islay; fumo denso, frutta secca, note di quercia e un corpo vellutato e maestoso.",
-"alcoholic": true
-},
-{
-"id": "whisky-akashi",
-"nome": "Akashi",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Akashi+Whisky",
-"miniDescrizione": "Blended whisky giapponese morbido con note di vaniglia e cereali.",
-"descrizioneCompleta": "Distillato dalla distilleria White Oak vicino al mare di Seto, propone aromi dolci, malto chiaro e delicati sentori legnosi.",
-"alcoholic": true
-},
-{
-"id": "whisky-nikka-days",
-"nome": "Nikka Days",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Nikka+Days",
-"miniDescrizione": "Whisky giapponese fresco, rotondo e fruttato per ogni occasione.",
-"descrizioneCompleta": "Blend delicato di whisky di grano e malto leggermente torbato delle distillerie Yoichi e Miyagikyo. Cremoso, floreale e setoso.",
-"alcoholic": true
-},
-{
-"id": "whisky-tenjaku",
-"nome": "Tenjaku Whisky",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Tenjaku+Whisky",
-"miniDescrizione": "Whisky giapponese armonico affinato in botti di quercia.",
-"descrizioneCompleta": "Ottenuto con acqua pura dalle sorgenti del Monte Fuji, offre un profilo aromatico piacevole con note di pera, mela verde e spezie dolci.",
-"alcoholic": true
-},
-{
-"id": "whisky-talisker-skye",
-"nome": "Talisker Skye",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Talisker+Skye",
-"miniDescrizione": "Single Malt dell'Isola di Skye con note marine e pepe nero.",
-"descrizioneCompleta": "Cattura l'essenza selvaggia delle coste scozzesi: fumo dolce, brezza salmastra, agrumi e il caratteristico finale speziato al pepe.",
-"alcoholic": true
-},
-{
-"id": "whisky-johnnie-walker-red",
-"nome": "Johnnie Walker Red Label",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Johnnie+Walker+Red",
-"miniDescrizione": "Blended Scotch versatile con note speziate e fumo leggero.",
-"descrizioneCompleta": "Lo Scotch whisky più venduto al mondo; speziato, vivace, ideale liscio con ghiaccio o come base per cocktail ad alta miscelazione.",
-"alcoholic": true
-},
-{
-"id": "whiskey-jack-daniels-honey",
-"nome": "Jack Daniel's Tennessee Honey",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Jack+Daniels+Honey",
-"miniDescrizione": "Liquore con whiskey Jack Daniel's e miele naturale.",
-"descrizioneCompleta": "Unisce il carattere del classico Old No. 7 alla dolcezza del miele artigianale, con un finale morbido e vellutato.",
-"alcoholic": true
-},
-{
-"id": "whiskey-jack-daniels-old-7",
-"nome": "Jack Daniel's Old No. 7",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Jack+Daniels+Old+7",
-"miniDescrizione": "Tennessee Whiskey filtrato goccia a goccia su carboni d'acero.",
-"descrizioneCompleta": "Il celebre whiskey di Lynchburg: note di caramello, vaniglia, quercia tostata e morbidezza data dal processo di charcoal mellowing.",
-"alcoholic": true
-},
-{
-"id": "whiskey-bulleit-bourbon",
-"nome": "Bulleit Bourbon",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Bulleit+Bourbon",
-"miniDescrizione": "Kentucky Bourbon ad alto contenuto di segale, secco e speziato.",
-"descrizioneCompleta": "Ispirato a una ricetta dell'Ottocento, presenta aromi caldi di rovere, vaniglia, spezie forti e una finitura liscia e pulita.",
-"alcoholic": true
-},
-{
-"id": "whiskey-old-virginia-6",
-"nome": "Old Virginia 6 Years",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Old+Virginia+6",
-"miniDescrizione": "Kentucky Straight Bourbon invecchiato 6 anni in quercia nuova.",
-"descrizioneCompleta": "Distillato con prevalenza di mais e maturato in fusti bruciati, esprime sentori di toffee, miele e legno tostato.",
-"alcoholic": true
-},
-{
-"id": "whisky-chivas-regal-12",
-"nome": "Chivas Regal 12 Years",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Chivas+Regal+12",
-"miniDescrizione": "Blended Scotch morbido e ricco maturato per almeno 12 anni.",
-"descrizioneCompleta": "Equilibrio impeccabile tra malti Speyside e cereali fini: note di miele, vaniglia, nocciole e mele mature.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Rum",
-"prodotti": [
-{
-"id": "rum-baron-samedi",
-"nome": "Baron Samedi",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Baron+Samedi",
-"miniDescrizione": "Spiced rum caraibico con vaniglia, cacao e spezie esotiche.",
-"descrizioneCompleta": "Miscela di rum giamaicani e distillati caraibici infusi con vaniglia, cannella, noce moscata e cacao naturale; scuro e corposo.",
-"alcoholic": true
-},
-{
-"id": "rum-brugal-anejo",
-"nome": "Brugal Añejo",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Brugal+Anejo",
-"miniDescrizione": "Rum dominicano invecchiato in botti di rovere americano.",
-"descrizioneCompleta": "Tradizione dominicana dal 1888: gusto asciutto, equilibrato e pulito con piacevoli sentori di cioccolato fondente e caramello.",
-"alcoholic": true
-},
-{
-"id": "rum-barcelo-gran-anejo",
-"nome": "Barceló Gran Añejo",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Barcelo+Gran+Anejo",
-"miniDescrizione": "Rum dorato della Repubblica Dominicana da puro succo di canna.",
-"descrizioneCompleta": "Maturato fino a 6 anni in botti ex-bourbon, dona aromi di malto, noce, vaniglia e caramella mou, con finale piacevolmente persistente.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Vodka",
-"prodotti": [
-{
-"id": "vodka-au-blue-raspberry",
-"nome": "Au Vodka Blue Raspberry",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Au+Blue+Raspberry",
-"miniDescrizione": "Vodka premium filtrata su oro al gusto di lampone blu.",
-"descrizioneCompleta": "Distillata cinque volte da cereali selezionati e filtrata attraverso l'oro, si presenta con un colore blu acceso e una dolcezza fruttata intensa.",
-"alcoholic": true
-},
-{
-"id": "vodka-au-strawberry-burst",
-"nome": "Au Vodka Strawberry Burst",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Au+Strawberry+Burst",
-"miniDescrizione": "Vodka dolce e vibrante con profumo e aroma di fragola matura.",
-"descrizioneCompleta": "Una vera esplosione di gusto fragola racchiusa nell'iconica bottiglia dorata Au Vodka. Perfetta liscia con ghiaccio o miscelata.",
-"alcoholic": true
-},
-{
-"id": "vodka-au-original",
-"nome": "Au Vodka Original",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Au+Vodka+Original",
-"miniDescrizione": "Vodka ultra-premium distillata cinque volte e filtrata su oro.",
-"descrizioneCompleta": "Purezza assoluta e morbidezza vellutata al palato, creata con grano britannico di altissima qualità e purissima acqua di sorgente.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Tequila",
-"prodotti": [
-{
-"id": "tequila-kah-blanco",
-"nome": "Kah Blanco",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Kah+Blanco",
-"miniDescrizione": "Tequila 100% agave blu nell'iconica bottiglia a teschio messicano.",
-"descrizioneCompleta": "Ispirata al Día de los Muertos, sprigiona aromi freschi e terrosi di agave cotta, sentori pepati e una nota speziata pulita.",
-"alcoholic": true
-},
-{
-"id": "tequila-clase-azul-reposado",
-"nome": "Clase Azul Reposado",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Clase+Azul+Reposado",
-"miniDescrizione": "Tequila ultra-premium 100% agave tequilana weber in caraffa dipinta a mano.",
-"descrizioneCompleta": "Affinata per 8 mesi in botti di quercia americana, regala note sublimi di vaniglia, scorza d'arancia e caramello con una morbidezza ineguagliabile.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Cognac, Brandy & Armagnac",
-"prodotti": [
-{
-"id": "armagnac-saint-vivant",
-"nome": "Saint-Vivant",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Saint+Vivant",
-"miniDescrizione": "Armagnac francese tradizionale nell'inconfondibile bottiglia storta.",
-"descrizioneCompleta": "Distillato nelle terre di Guascogna e affinato in botti di quercia locale, offre note calde di prugna secca, vaniglia e spezie antiche.",
-"alcoholic": true
-},
-{
-"id": "brandy-baron-de-avignac",
-"nome": "Baron de Avignac",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Baron+de+Avignac",
-"miniDescrizione": "Brandy morbido e rotondo da distillazione di vini scelti.",
-"descrizioneCompleta": "Un distillato dal profilo accessibile ed equilibrato, caratterizzato da sfumature di legno dolce e frutta matura.",
-"alcoholic": true
-},
-{
-"id": "cognac-courvoisier-vs",
-"nome": "Courvoisier VS",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Courvoisier+VS",
-"miniDescrizione": "Cognac francese elegante con sentori floreali e rovere tostato.",
-"descrizioneCompleta": "Blend di cru Fin Bois e Petite Champagne maturato fino a sette anni; note di fiori primaverili, frutta fresca e quercia ben dosata.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Champagne & Spumanti",
-"prodotti": [
-{
-"id": "spumante-lacheteau-cremant-loire",
-"nome": "LaCheteau Crémant de Loire Brut",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Lacheteau+Cremant",
-"miniDescrizione": "Metodo classico della Valle della Loira fresco e floreale.",
-"descrizioneCompleta": "Spumante francese vivace con perlage fine, note di mela verde, fiori bianchi e una mineralità croccante e rinfrescante.",
-"alcoholic": true
-},
-{
-"id": "champagne-veuve-pelletier-brut",
-"nome": "Veuve Pelletier Brut",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Veuve+Pelletier+Brut",
-"miniDescrizione": "Champagne d'ingresso equilibrato, fresco e piacevolmente fruttato.",
-"descrizioneCompleta": "Champagne dal profilo armonico e versatile: note di agrumi, crosta di pane e pesca bianca con un perlage persistente.",
-"alcoholic": true
-},
-{
-"id": "champagne-henri-de-verlaine-brut",
-"nome": "Henri de Verlaine Brut",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Henri+de+Verlaine",
-"miniDescrizione": "Champagne fresco e vivace con note agrumate e minerali.",
-"descrizioneCompleta": "Perfetto per aperitivi di festa; perlage brioso, note di pera williams e lievito fresco con un sorso pulito ed elegante.",
-"alcoholic": true
-},
-{
-"id": "champagne-bollinger-special-cuvee",
-"nome": "Bollinger Special Cuvée",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Bollinger+Special+Cuvee",
-"miniDescrizione": "Celebre Champagne dal corpo potente dominato da Pinot Noir.",
-"descrizioneCompleta": "Simbolo della maison Bollinger: complessità profonda, aromi di brioche, spezie calde, mela cotta e struttura sontuosa.",
-"alcoholic": true
-},
-{
-"id": "champagne-armand-de-brignac-gold",
-"nome": "Armand de Brignac "Ace of Spades" Gold Brut",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Armand+de+Brignac+Gold",
-"miniDescrizione": "Champagne iconico e lussuoso nella bottiglia dorata lavorata a mano.",
-"descrizioneCompleta": "Cuvée di prestigio assoluto prodotta dalla famiglia Cattier: cremoso, note di pasticceria, albicocca, fiori d'arancio e texture raffinata.",
-"alcoholic": true
-},
-{
-"id": "champagne-dom-perignon-2015",
-"nome": "Dom Pérignon Vintage 2015",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Dom+Perignon+2015",
-"miniDescrizione": "Millessimato leggendario d'eccellenza, eleganza e mineralità.",
-"descrizioneCompleta": "Realizzato solo nelle annate straordinarie: bouquet complesso di cacao, scorza di cedro, fumo sottile e freschezza tesa e indimenticabile.",
-"alcoholic": true
-},
-{
-"id": "champagne-veuve-clicquot-yellow-label",
-"nome": "Veuve Clicquot Yellow Label Brut",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Veuve+Clicquot+Brut",
-"miniDescrizione": "L'inconfondibile etichetta gialla: potenza, freschezza e setosità.",
-"descrizioneCompleta": "Equilibrio tra forza e aromaticità grazie alla dominanza di Pinot Noir. Sentori di pesca, vaniglia e note tostate.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Vini",
-"prodotti": [
-{
-"id": "vino-cascina-valle-asinari-barbera-2024",
-"nome": "Cascina Valle Asinari Barbera d'Asti 2024",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Barbera+dAsti+2024",
-"miniDescrizione": "Vino rosso piemontese fragrante, fresco e fruttato.",
-"descrizioneCompleta": "Barbera d'Asti tipica e autentica: sentori decisi di ciliegia marasca, frutti di bosco e una vibrante freschezza che invita alla beva.",
-"alcoholic": true
-}
-]
-},
-{
-"tipologia": "Liquori & Distillati",
-"prodotti": [
-{
-"id": "liquore-passoa",
-"nome": "Passoa",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Passoa",
-"miniDescrizione": "Liquore esotico al frutto della passione (maracujá).",
-"descrizioneCompleta": "Famoso per il suo gusto dolce-acidulo e il colore rosso rubino, è l'ingrediente principe del Pornstar Martini e di cocktail tropicali.",
-"alcoholic": true
-},
-{
-"id": "liquore-dead-mans-fingers-strawberry",
-"nome": "Dead Man's Fingers Strawberry Tequila",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=DMF+Strawberry+Tequila",
-"miniDescrizione": "Liquore cremoso alla tequila con sapore vellutato di fragola.",
-"descrizioneCompleta": "Una deliziosa combinazione di tequila messicana e crema alla fragola: dolce, setosa e perfetta servita fredda in shot.",
-"alcoholic": true
-},
-{
-"id": "liquore-latte-di-suocera",
-"nome": "Latte di Suocera",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Latte+di+Suocera",
-"miniDescrizione": "Storico liquore centerbe ad altissima gradazione alcolica.",
-"descrizioneCompleta": "Distillato di erbe alpine con gradazione importante e sapore intensamente balsamico ed energico; servito come digestivo deciso o flambé.",
-"alcoholic": true
-},
-{
-"id": "vermouth-carlo-alberto-red",
-"nome": "Carlo Alberto Red",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Carlo+Alberto+Red",
-"miniDescrizione": "Vermouth di Torino superiore artigianale rosso.",
-"descrizioneCompleta": "Prodotto con vini piemontesi DOC e un blend complesso di erbe officinali, spezie e scorze d'agrumi; ideale per grandi classici come Negroni o Manhattan.",
-"alcoholic": true
-},
-{
-"id": "liquore-toro-genziana",
-"nome": "Toro Liquore Genziana",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Toro+Genziana",
-"miniDescrizione": "Liquore digestivo artigianale da radici di genziana.",
-"descrizioneCompleta": "Estratto di pura radice di genziana, offre un gusto tipicamente amarognolo, pulito e dalle spiccate proprietà digestive.",
-"alcoholic": true
-},
-{
-"id": "grappa-sontino-5-anni",
-"nome": "Sontino 5 Anni",
-"prezzo": "€ --.--",
-"immagine": "https://via.placeholder.com/300x200?text=Sontino+5+Anni",
-"miniDescrizione": "Grappa invecchiata 5 anni in fusti di legno pregiato.",
-"descrizioneCompleta": "Distillata da vinacce selezionate e affinata con cura per un lustro: colore ambrato caldo, profumi tostati e beva morbida e armonica.",
-"alcoholic": true
-}
-]
-}
+  {
+    "tipologia": "Gin",
+    "prodotti": [
+      {
+        "id": "hendricks-flora-adora",
+        "nome": "Hendrick's Flora Adora",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin floreale aromatico in edizione speciale.",
+        "descrizioneCompleta": "Hendrick's Flora Adora arricchito con essenze floreali fresche e profumate.",
+        "immagine": "https://via.placeholder.com/300x200?text=Hendrick's+Flora+Adora",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "malfy-gin-con-limone",
+        "nome": "Malfy Gin Con Limone",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin italiano agli agrumi di Amalfi.",
+        "descrizioneCompleta": "Distillato con limoni della Costiera Amalfitana e botaniche mediterranee.",
+        "immagine": "https://via.placeholder.com/300x200?text=Malfy+Limone",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "tenuta-sussambrino-servaj-iris",
+        "nome": "Tenuta Sussambrino Servaj Iris",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin artigianale all'iris.",
+        "descrizioneCompleta": "Distillato piemontese con iris e botaniche locali raccolte a mano.",
+        "immagine": "https://via.placeholder.com/300x200?text=Servaj+Iris",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "knut-hansen",
+        "nome": "Knut Hansen",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Dry Gin tedesco artigianale.",
+        "descrizioneCompleta": "Distillato ad Amburgo con mele e basilico del nord della Germania.",
+        "immagine": "https://via.placeholder.com/300x200?text=Knut+Hansen",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "gin-mare",
+        "nome": "Gin Mare",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin mediterraneo con olive arbequina e rosmarino.",
+        "descrizioneCompleta": "Botaniche mediterranee tra cui timo, basilico, rosmarino e olive arbequina.",
+        "immagine": "https://via.placeholder.com/300x200?text=Gin+Mare",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "tanqueray",
+        "nome": "Tanqueray",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "London Dry Gin classico.",
+        "descrizioneCompleta": "Quattro botaniche essenziali per un profilo aromatico e speziato inconfondibile.",
+        "immagine": "https://via.placeholder.com/300x200?text=Tanqueray",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "columbus-pompelmo-rosa",
+        "nome": "Columbus al Pompelmo Rosa",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin fresco e agrumato al pompelmo rosa.",
+        "descrizioneCompleta": "Note vivaci ed estive con infusione di vero pompelmo rosa.",
+        "immagine": "https://via.placeholder.com/300x200?text=Columbus+Pompelmo",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "tenjaku-gin",
+        "nome": "Tenjaku Gin",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin giapponese raffinato.",
+        "descrizioneCompleta": "Botaniche tradizionali giapponesi tra cui yuzu, pepe sansho e tè verde.",
+        "immagine": "https://via.placeholder.com/300x200?text=Tenjaku+Gin",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "porcelain-mandarin",
+        "nome": "Porcelain Mandarin",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Craft Gin artigianale con mandarino.",
+        "descrizioneCompleta": "Distillato con scorze di mandarino e spezie esotiche.",
+        "immagine": "https://via.placeholder.com/300x200?text=Porcelain+Mandarin",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "etsu-double-yuzu",
+        "nome": "Etsu Double Yuzu",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin giapponese con doppia infusione di yuzu.",
+        "descrizioneCompleta": "Aroma agrumato intenso e persistente proveniente dall'isola di Hokkaido.",
+        "immagine": "https://via.placeholder.com/300x200?text=Etsu+Double+Yuzu",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "generous-gin-organic",
+        "nome": "Generous Gin Organic",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin biologico francese morbido e fresco.",
+        "descrizioneCompleta": "Distillato 100% biologico con note di coriandolo e agrumi.",
+        "immagine": "https://via.placeholder.com/300x200?text=Generous+Organic",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "generous-gin",
+        "nome": "Generous Gin",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin elegante con agrumi e pepe rosso.",
+        "descrizioneCompleta": "Morbido e bilanciato, presentato nell'iconica bottiglia di opaline bianca.",
+        "immagine": "https://via.placeholder.com/300x200?text=Generous+Gin",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "generous-gin-azur",
+        "nome": "Generous Gin Azur",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Ispirato ai profumi della Costa Azzurra.",
+        "descrizioneCompleta": "Botaniche mediterranee con violetta, agrumi e gelsomino.",
+        "immagine": "https://via.placeholder.com/300x200?text=Generous+Azur",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "poli-marconi-42",
+        "nome": "Poli Marconi 42",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin stile mediterraneo delle Distillerie Poli.",
+        "descrizioneCompleta": "Distillato artigianale veneto con rosmarino, menta e basilico.",
+        "immagine": "https://via.placeholder.com/300x200?text=Poli+Marconi+42",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "bottega-bacur",
+        "nome": "Bottega Bacûr",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Distilled Dry Gin italiano.",
+        "descrizioneCompleta": "Ginepro toscano, salvia del Veneto e mirto in bottiglia metallizzata.",
+        "immagine": "https://via.placeholder.com/300x200?text=Bottega+Bacur",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "engine-gin",
+        "nome": "Engine",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Pure Organic Gin in lattina vintage.",
+        "descrizioneCompleta": "Salvia di Langa, limoni di Sicilia e radice di liquirizia 100% bio.",
+        "immagine": "https://via.placeholder.com/300x200?text=Engine+Gin",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "roku-gin",
+        "nome": "Roku Gin",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Il celebre gin giapponese alle 6 botaniche delle 4 stagioni.",
+        "descrizioneCompleta": "Fiori e foglie di sakura, tè sencha, tè gyokuro, pepe sansho e scorza di yuzu.",
+        "immagine": "https://via.placeholder.com/300x200?text=Roku+Gin",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "nordes-gin",
+        "nome": "Nordés",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin galiziano su base di vino Albariño.",
+        "descrizioneCompleta": "Profilo unico, aromatico, fresco e floreale.",
+        "immagine": "https://via.placeholder.com/300x200?text=Nordes+Gin",
+        "categoria": "gin",
+        "alcoholic": true
+      },
+      {
+        "id": "dolce-vita-gin",
+        "nome": "Dolce Vita",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Gin italiano dai profumi agrumati e solari.",
+        "descrizioneCompleta": "Ispirato all'eleganza estiva della Riviera italiana.",
+        "immagine": "https://via.placeholder.com/300x200?text=Dolce+Vita+Gin",
+        "categoria": "gin",
+        "alcoholic": true
+      }
+    ]
+  },
+  {
+    "tipologia": "Whisky & Bourbon",
+    "prodotti": [
+      {
+        "id": "laphroaig-10-years",
+        "nome": "Laphroaig 10 Years",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Single Malt di Islay intensamente torbato.",
+        "descrizioneCompleta": "Note marine, fumo di torba denso e sfumature medicinali uniche.",
+        "immagine": "https://via.placeholder.com/300x200?text=Laphroaig+10",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "lagavulin-16-years",
+        "nome": "Lagavulin 16 Years",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Il re dei Single Malt torbati di Islay.",
+        "descrizioneCompleta": "Invecchiato 16 anni, maestoso e ricco di torba, fumo e frutta secca.",
+        "immagine": "https://via.placeholder.com/300x200?text=Lagavulin+16",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "akashi-whisky",
+        "nome": "Akashi",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Blended whisky giapponese morbido e versatile.",
+        "descrizioneCompleta": "Note di vaniglia, rovere, malto e sentori fruttati leggeri.",
+        "immagine": "https://via.placeholder.com/300x200?text=Akashi+Whisky",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "nikka-days",
+        "nome": "Nikka Days",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Whisky giapponese fresco e fruttato.",
+        "descrizioneCompleta": "Unione di malto e grano per un gusto setoso con note di pera e miele.",
+        "immagine": "https://via.placeholder.com/300x200?text=Nikka+Days",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "tenjaku-whisky",
+        "nome": "Tenjaku Whisky",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Whisky artigianale dalle alpi giapponesi.",
+        "descrizioneCompleta": "Creato con purissima acqua di sorgente vulcanica per un sorso purissimo.",
+        "immagine": "https://via.placeholder.com/300x200?text=Tenjaku+Whisky",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "talisker-skye",
+        "nome": "Talisker Skye",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Single Malt dell'isola di Skye con torba e pepe.",
+        "descrizioneCompleta": "Note di brezza marina, fumo e il celebre finale al pepe nero.",
+        "immagine": "https://via.placeholder.com/300x200?text=Talisker+Skye",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "johnnie-walker-red-label",
+        "nome": "Johnnie Walker Red Label",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Blended Scotch Whisky energico e speziato.",
+        "descrizioneCompleta": "Il classico scotch miscelato con spezie vivaci e fumo leggero.",
+        "immagine": "https://via.placeholder.com/300x200?text=Johnnie+Red",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "jack-daniels-tennessee-honey",
+        "nome": "Jack Daniel's Tennessee Honey",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Liquore al miele e Jack Daniel's.",
+        "descrizioneCompleta": "Dolce e cremoso, bilancia il calore del whiskey con il miele naturale.",
+        "immagine": "https://via.placeholder.com/300x200?text=Jack+Honey",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "jack-daniels-old-no-7",
+        "nome": "Jack Daniel's Old No. 7",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "L'iconico Tennessee Whiskey.",
+        "descrizioneCompleta": "Filtrato goccia a goccia su carboni d'acero e invecchiato in botti di rovere americano.",
+        "immagine": "https://via.placeholder.com/300x200?text=Jack+No+7",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "bulleit-bourbon",
+        "nome": "Bulleit Bourbon",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Kentucky Straight Bourbon ad alto contenuto di segale.",
+        "descrizioneCompleta": "Carattere speziato e pulito con sentori di vaniglia e quercia tostata.",
+        "immagine": "https://via.placeholder.com/300x200?text=Bulleit+Bourbon",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "old-virginia-6-years",
+        "nome": "Old Virginia 6 Years",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Bourbon invecchiato 6 anni in botti tostate.",
+        "descrizioneCompleta": "Gusto rotondo con caramello, vaniglia e legno pregiato.",
+        "immagine": "https://via.placeholder.com/300x200?text=Old+Virginia+6",
+        "categoria": "whisky",
+        "alcoholic": true
+      },
+      {
+        "id": "chivas-regal-12-years",
+        "nome": "Chivas Regal 12 Years",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Blended Scotch Whisky invecchiato 12 anni.",
+        "descrizioneCompleta": "Ricco e rotondo con note di miele, nocciola e frutta matura.",
+        "immagine": "https://via.placeholder.com/300x200?text=Chivas+12",
+        "categoria": "whisky",
+        "alcoholic": true
+      }
+    ]
+  },
+  {
+    "tipologia": "Rum",
+    "prodotti": [
+      {
+        "id": "baron-samedi",
+        "nome": "Baron Samedi",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Spiced Rum caraibico con vaniglia e spezie.",
+        "descrizioneCompleta": "Rum scuro e corposo arricchito da cacao, vaniglia e spezie esotiche.",
+        "immagine": "https://via.placeholder.com/300x200?text=Baron+Samedi",
+        "categoria": "rum",
+        "alcoholic": true
+      },
+      {
+        "id": "brugal-anejo",
+        "nome": "Brugal Añejo",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Rum dominicano invecchiato in rovere americano.",
+        "descrizioneCompleta": "Equilibrato, secco e profumato, perfetto da meditazione o miscelato.",
+        "immagine": "https://via.placeholder.com/300x200?text=Brugal+Anejo",
+        "categoria": "rum",
+        "alcoholic": true
+      },
+      {
+        "id": "barcelo-gran-anejo",
+        "nome": "Barceló Gran Añejo",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Rum della Repubblica Dominicana da puro succo di canna.",
+        "descrizioneCompleta": "Aromi di cioccolato, vaniglia, noci e tabacco dolce.",
+        "immagine": "https://via.placeholder.com/300x200?text=Barcelo+Gran+Anejo",
+        "categoria": "rum",
+        "alcoholic": true
+      }
+    ]
+  },
+  {
+    "tipologia": "Vodka",
+    "prodotti": [
+      {
+        "id": "au-vodka-original",
+        "nome": "Au Vodka Original",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Vodka ultra-premium distillata 5 volte e filtrata in oro.",
+        "descrizioneCompleta": "Pura, incredibilmente vellutata e presentata nella bottiglia d'oro.",
+        "immagine": "https://via.placeholder.com/300x200?text=Au+Original",
+        "categoria": "vodka",
+        "alcoholic": true
+      },
+      {
+        "id": "au-vodka-blue-raspberry",
+        "nome": "Au Vodka Blue Raspberry",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Vodka aromatizzata al lampone blu.",
+        "descrizioneCompleta": "Gusto fruttato intenso dal colore blu elettrico inconfondibile.",
+        "immagine": "https://via.placeholder.com/300x200?text=Au+Blue+Raspberry",
+        "categoria": "vodka",
+        "alcoholic": true
+      },
+      {
+        "id": "au-vodka-strawberry-burst",
+        "nome": "Au Vodka Strawberry Burst",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Vodka con infusione di fragole fresche.",
+        "descrizioneCompleta": "Dolce, fruttata e vibrante, ideale on the rocks.",
+        "immagine": "https://via.placeholder.com/300x200?text=Au+Strawberry",
+        "categoria": "vodka",
+        "alcoholic": true
+      }
+    ]
+  },
+  {
+    "tipologia": "Tequila",
+    "prodotti": [
+      {
+        "id": "kah-blanco",
+        "nome": "Kah Blanco",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Tequila 100% agave nella bottiglia a teschio.",
+        "descrizioneCompleta": "Sentori freschi d'agave cotta, pepe bianco ed erbe aromatiche.",
+        "immagine": "https://via.placeholder.com/300x200?text=Kah+Blanco",
+        "categoria": "tequila",
+        "alcoholic": true
+      },
+      {
+        "id": "clase-azul-reposado",
+        "nome": "Clase Azul Reposado",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Tequila ultra-premium in decanter dipinto a mano.",
+        "descrizioneCompleta": "Invecchiata 8 mesi in rovere, con note di vaniglia, toffee e nocciola.",
+        "immagine": "https://via.placeholder.com/300x200?text=Clase+Azul",
+        "categoria": "tequila",
+        "alcoholic": true
+      },
+      {
+        "id": "dead-mans-fingers-strawberry-tequila",
+        "nome": "Dead Man's Fingers Strawberry Tequila",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Liquore cremoso alla tequila e fragola.",
+        "descrizioneCompleta": "Incontro delizioso tra la morbida crema di fragola e la tequila messicana.",
+        "immagine": "https://via.placeholder.com/300x200?text=DMF+Strawberry+Tequila",
+        "categoria": "tequila",
+        "alcoholic": true
+      }
+    ]
+  },
+  {
+    "tipologia": "Champagne & Spumanti",
+    "prodotti": [
+      {
+        "id": "armand-de-brignac-ace-of-spades-gold",
+        "nome": "Armand de Brignac 'Ace of Spades' Gold",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Champagne iconico e sontuoso.",
+        "descrizioneCompleta": "Cuvée prestigiosa presentata nella celebre bottiglia dorata con l'asso di picche.",
+        "immagine": "https://via.placeholder.com/300x200?text=Armand+de+Brignac",
+        "categoria": "champagne",
+        "alcoholic": true
+      },
+      {
+        "id": "dom-perignon-vintage-2015",
+        "nome": "Dom Pérignon Vintage 2015",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Il mito dello Champagne millesimato.",
+        "descrizioneCompleta": "Eleganza pura, mineralità ed eccezionale persistenza gustativa.",
+        "immagine": "https://via.placeholder.com/300x200?text=Dom+Perignon+2015",
+        "categoria": "champagne",
+        "alcoholic": true
+      },
+      {
+        "id": "bollinger-special-cuvee",
+        "nome": "Bollinger Special Cuvée",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Champagne di straordinaria struttura.",
+        "descrizioneCompleta": "Prevalenza di Pinot Nero, note tostate, brioche e frutta matura.",
+        "immagine": "https://via.placeholder.com/300x200?text=Bollinger",
+        "categoria": "champagne",
+        "alcoholic": true
+      },
+      {
+        "id": "veuve-clicquot-yellow-label-brut",
+        "nome": "Veuve Clicquot Yellow Label Brut",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Champagne Brut fresco e vibrante.",
+        "descrizioneCompleta": "Forza e raffinatezza con note fruttate e di vaniglia.",
+        "immagine": "https://via.placeholder.com/300x200?text=Veuve+Clicquot",
+        "categoria": "champagne",
+        "alcoholic": true
+      },
+      {
+        "id": "henri-de-verlaine-brut",
+        "nome": "Henri de Verlaine Brut",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Champagne armonioso e fine.",
+        "descrizioneCompleta": "Bollicina vivace adatta per aperitivi d'eccellenza.",
+        "immagine": "https://via.placeholder.com/300x200?text=Henri+de+Verlaine",
+        "categoria": "champagne",
+        "alcoholic": true
+      },
+      {
+        "id": "veuve-pelletier-brut",
+        "nome": "Veuve Pelletier Brut",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Champagne vivace con perlage persistente.",
+        "descrizioneCompleta": "Profumi floreali e agrumati con un sorso piacevolmente secco.",
+        "immagine": "https://via.placeholder.com/300x200?text=Veuve+Pelletier",
+        "categoria": "champagne",
+        "alcoholic": true
+      },
+      {
+        "id": "lacheteau-cremant-de-loire-brut",
+        "nome": "LaCheteau Crémant de Loire Brut",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Spumante metodo classico della Loira.",
+        "descrizioneCompleta": "Fresco, floreale ed elegantemente aromatico.",
+        "immagine": "https://via.placeholder.com/300x200?text=Cremant+Loire",
+        "categoria": "champagne",
+        "alcoholic": true
+      }
+    ]
+  },
+  {
+    "tipologia": "Liquori, Brandy & Altri",
+    "prodotti": [
+      {
+        "id": "passoa",
+        "nome": "Passoa",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Liquore al frutto della passione.",
+        "descrizioneCompleta": "Esotico e versatile, ingrediente irrinunciabile per cocktail fruttati.",
+        "immagine": "https://via.placeholder.com/300x200?text=Passoa",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "latte-di-suocera",
+        "nome": "Latte di Suocera",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Liquore centerbe ad alta gradazione.",
+        "descrizioneCompleta": "Erbe alpine distillate secondo antica ricetta segreta.",
+        "immagine": "https://via.placeholder.com/300x200?text=Latte+di+Suocera",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "toro-liquore-genziana",
+        "nome": "Toro Liquore Genziana",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Amaro con pura radice di genziana.",
+        "descrizioneCompleta": "Amaricante puro della tradizione abruzzese, ottimo digestivo.",
+        "immagine": "https://via.placeholder.com/300x200?text=Toro+Genziana",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "carlo-alberto-red",
+        "nome": "Carlo Alberto Red",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Vermouth di Torino superiore rosso.",
+        "descrizioneCompleta": "Aromatico, ricco di erbe, spezie sabaude e scorze d'arancia.",
+        "immagine": "https://via.placeholder.com/300x200?text=Carlo+Alberto+Red",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "saint-vivant",
+        "nome": "Saint-Vivant",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Armagnac d'eccellenza in bottiglia dal collo ritorto.",
+        "descrizioneCompleta": "Profumi caldi di prugna, vaniglia e legno antico di quercia.",
+        "immagine": "https://via.placeholder.com/300x200?text=Saint+Vivant",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "courvoisier-vs",
+        "nome": "Courvoisier VS",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Cognac francese prestigioso.",
+        "descrizioneCompleta": "Armonia di frutta fresca, rovere e fiori bianchi.",
+        "immagine": "https://via.placeholder.com/300x200?text=Courvoisier+VS",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "baron-de-avignac",
+        "nome": "Baron de Avignac",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Brandy morbido e caldo.",
+        "descrizioneCompleta": "Invecchiato tradizionalmente con sfumature tostate e rotonde.",
+        "immagine": "https://via.placeholder.com/300x200?text=Baron+de+Avignac",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "sontino-5-anni",
+        "nome": "Sontino 5 Anni",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Grappa invecchiata 5 anni in botte.",
+        "descrizioneCompleta": "Colore ambrato, note calde di legno e profumo avvolgente.",
+        "immagine": "https://via.placeholder.com/300x200?text=Sontino+5+Anni",
+        "categoria": "liquori",
+        "alcoholic": true
+      },
+      {
+        "id": "cascina-valle-asinari-barbera-dasti-2024",
+        "nome": "Cascina Valle Asinari Barbera d'Asti 2024",
+        "prezzo": "€ --.--",
+        "miniDescrizione": "Vino rosso piemontese DOCG.",
+        "descrizioneCompleta": "Corposo, frutti rossi, acidità vibrante e finale piacevolmente persistente.",
+        "immagine": "https://via.placeholder.com/300x200?text=Barbera+dAsti",
+        "categoria": "liquori",
+        "alcoholic": true
+      }
+    ]
+  }
 ]
